@@ -1,0 +1,15 @@
+/Users/maciejw/Projects/cleanarch4/src/cleanarch4.Core/bin/Debug/net6.0/cleanarch4.Core.deps.json
+/Users/maciejw/Projects/cleanarch4/src/cleanarch4.Core/bin/Debug/net6.0/cleanarch4.Core.dll
+/Users/maciejw/Projects/cleanarch4/src/cleanarch4.Core/bin/Debug/net6.0/cleanarch4.Core.pdb
+/Users/maciejw/Projects/cleanarch4/src/cleanarch4.Core/bin/Debug/net6.0/cleanarch4.SharedKernel.dll
+/Users/maciejw/Projects/cleanarch4/src/cleanarch4.Core/bin/Debug/net6.0/cleanarch4.SharedKernel.pdb
+/Users/maciejw/Projects/cleanarch4/src/cleanarch4.Core/obj/Debug/net6.0/cleanarch4.Core.csproj.AssemblyReference.cache
+/Users/maciejw/Projects/cleanarch4/src/cleanarch4.Core/obj/Debug/net6.0/cleanarch4.Core.GeneratedMSBuildEditorConfig.editorconfig
+/Users/maciejw/Projects/cleanarch4/src/cleanarch4.Core/obj/Debug/net6.0/cleanarch4.Core.AssemblyInfoInputs.cache
+/Users/maciejw/Projects/cleanarch4/src/cleanarch4.Core/obj/Debug/net6.0/cleanarch4.Core.AssemblyInfo.cs
+/Users/maciejw/Projects/cleanarch4/src/cleanarch4.Core/obj/Debug/net6.0/cleanarch4.Core.csproj.CoreCompileInputs.cache
+/Users/maciejw/Projects/cleanarch4/src/cleanarch4.Core/obj/Debug/net6.0/cleanarch4.Core.csproj.CopyComplete
+/Users/maciejw/Projects/cleanarch4/src/cleanarch4.Core/obj/Debug/net6.0/cleanarch4.Core.dll
+/Users/maciejw/Projects/cleanarch4/src/cleanarch4.Core/obj/Debug/net6.0/refint/cleanarch4.Core.dll
+/Users/maciejw/Projects/cleanarch4/src/cleanarch4.Core/obj/Debug/net6.0/cleanarch4.Core.pdb
+/Users/maciejw/Projects/cleanarch4/src/cleanarch4.Core/obj/Debug/net6.0/ref/cleanarch4.Core.dll

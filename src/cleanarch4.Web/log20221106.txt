@@ -1,0 +1,88 @@
+2022-11-06 16:48:07.059 +01:00 [INF] User profile is available. Using '/Users/maciejw/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-11-06 16:48:08.250 +01:00 [INF] Entity Framework Core 6.0.8 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.8' with options: None
+2022-11-06 16:48:08.471 +01:00 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2022-11-06 16:48:08.502 +01:00 [INF] Entity Framework Core 6.0.8 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.8' with options: None
+2022-11-06 16:48:08.646 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "ToDoItems" AS "t")
+2022-11-06 16:48:08.967 +01:00 [INF] Now listening on: http://localhost:57679
+2022-11-06 16:48:08.969 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-06 16:48:08.970 +01:00 [INF] Hosting environment: Development
+2022-11-06 16:48:08.970 +01:00 [INF] Content root path: /Users/maciejw/Projects/cleanarch4/src/cleanarch4.Web/
+2022-11-06 16:48:09.113 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/ - -
+2022-11-06 16:48:09.190 +01:00 [WRN] Failed to determine the https port for redirect.
+2022-11-06 16:48:09.233 +01:00 [INF] Executing endpoint 'cleanarch4.Web.Controllers.HomeController.Index (cleanarch4.Web)'
+2022-11-06 16:48:09.255 +01:00 [INF] Route matched with {action = "Index", controller = "Home", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller cleanarch4.Web.Controllers.HomeController (cleanarch4.Web).
+2022-11-06 16:48:09.293 +01:00 [INF] Executing ViewResult, running view Index.
+2022-11-06 16:48:09.531 +01:00 [INF] Executed ViewResult - view Index executed in 254.5597ms.
+2022-11-06 16:48:09.535 +01:00 [INF] Executed action cleanarch4.Web.Controllers.HomeController.Index (cleanarch4.Web) in 278.1804ms
+2022-11-06 16:48:09.536 +01:00 [INF] Executed endpoint 'cleanarch4.Web.Controllers.HomeController.Index (cleanarch4.Web)'
+2022-11-06 16:48:09.545 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/ - - - 200 - text/html;+charset=utf-8 433.2382ms
+2022-11-06 16:48:09.562 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/lib/bootstrap/dist/js/bootstrap.bundle.min.js - -
+2022-11-06 16:48:09.562 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/lib/jquery/dist/jquery.min.js - -
+2022-11-06 16:48:09.607 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/cleanarch4.Web.styles.css?v=G9jpTKqWZX1RL2PiuPAqAdWQaUBS3_Mp7b7V8IuYzIA - -
+2022-11-06 16:48:09.615 +01:00 [INF] The file /cleanarch4.Web.styles.css was not modified
+2022-11-06 16:48:09.616 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/cleanarch4.Web.styles.css?v=G9jpTKqWZX1RL2PiuPAqAdWQaUBS3_Mp7b7V8IuYzIA - - - 304 - text/css 9.3814ms
+2022-11-06 16:48:09.621 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/lib/bootstrap/dist/css/bootstrap.min.css - -
+2022-11-06 16:48:09.622 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/css/site.css?v=AKvNjO3dCPPS0eSU1Ez8T2wI280i08yGycV9ndytL-c - -
+2022-11-06 16:48:09.622 +01:00 [INF] The file /css/site.css was not modified
+2022-11-06 16:48:09.622 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/css/site.css?v=AKvNjO3dCPPS0eSU1Ez8T2wI280i08yGycV9ndytL-c - - - 304 - text/css 0.2490ms
+2022-11-06 16:48:09.623 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - -
+2022-11-06 16:48:09.624 +01:00 [INF] The file /js/site.js was not modified
+2022-11-06 16:48:09.624 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - - - 304 - application/javascript 0.5338ms
+2022-11-06 16:48:09.660 +01:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: '/Users/maciejw/Projects/cleanarch4/src/cleanarch4.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js'
+2022-11-06 16:48:09.660 +01:00 [INF] Sending file. Request path: '/lib/jquery/dist/jquery.min.js'. Physical path: '/Users/maciejw/Projects/cleanarch4/src/cleanarch4.Web/wwwroot/lib/jquery/dist/jquery.min.js'
+2022-11-06 16:48:09.661 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/lib/bootstrap/dist/js/bootstrap.bundle.min.js - - - 200 78474 application/javascript 98.1555ms
+2022-11-06 16:48:09.661 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/lib/jquery/dist/jquery.min.js - - - 200 89478 application/javascript 98.1565ms
+2022-11-06 16:48:09.671 +01:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: '/Users/maciejw/Projects/cleanarch4/src/cleanarch4.Web/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css'
+2022-11-06 16:48:09.671 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/lib/bootstrap/dist/css/bootstrap.min.css - - - 200 162726 text/css 49.8763ms
+2022-11-06 16:48:09.735 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/favicon.ico - -
+2022-11-06 16:48:09.735 +01:00 [INF] The file /favicon.ico was not modified
+2022-11-06 16:48:09.735 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/favicon.ico - - - 304 - image/x-icon 0.2885ms
+2022-11-06 16:48:39.083 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/index.html - -
+2022-11-06 16:48:39.189 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/index.html - - - 200 - text/html;charset=utf-8 106.0713ms
+2022-11-06 16:48:39.209 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/swagger-ui.css - -
+2022-11-06 16:48:39.211 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/swagger-ui-bundle.js - -
+2022-11-06 16:48:39.211 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/swagger-ui-standalone-preset.js - -
+2022-11-06 16:48:39.222 +01:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2022-11-06 16:48:39.224 +01:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2022-11-06 16:48:39.224 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/swagger-ui-standalone-preset.js - - - 200 339486 application/javascript 12.8730ms
+2022-11-06 16:48:39.224 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/swagger-ui-bundle.js - - - 200 1095087 application/javascript 13.1956ms
+2022-11-06 16:48:39.226 +01:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2022-11-06 16:48:39.227 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/swagger-ui.css - - - 200 143943 text/css 17.7064ms
+2022-11-06 16:48:39.338 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - -
+2022-11-06 16:48:39.448 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 110.1372ms
+2022-11-06 16:50:03.947 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:57679/Projects application/json-patch+json 46
+2022-11-06 16:50:03.948 +01:00 [INF] Executing endpoint 'cleanarch4.Web.Endpoints.ProjectEndpoints.Create.HandleAsync (cleanarch4.Web)'
+2022-11-06 16:50:03.979 +01:00 [INF] Route matched with {action = "Handle", controller = "Create", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[cleanarch4.Web.Endpoints.ProjectEndpoints.CreateProjectResponse]] HandleAsync(cleanarch4.Web.Endpoints.ProjectEndpoints.CreateProjectRequest, System.Threading.CancellationToken) on controller cleanarch4.Web.Endpoints.ProjectEndpoints.Create (cleanarch4.Web).
+2022-11-06 16:50:04.225 +01:00 [INF] Entity Framework Core 6.0.8 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.8' with options: None
+2022-11-06 16:50:04.352 +01:00 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (Size = 30), @p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Projects" ("Name", "Priority")
+VALUES (@p0, @p1);
+SELECT "Id"
+FROM "Projects"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2022-11-06 16:50:04.407 +01:00 [INF] Executing OkObjectResult, writing value of type 'cleanarch4.Web.Endpoints.ProjectEndpoints.CreateProjectResponse'.
+2022-11-06 16:50:04.442 +01:00 [INF] Executed action cleanarch4.Web.Endpoints.ProjectEndpoints.Create.HandleAsync (cleanarch4.Web) in 463.2229ms
+2022-11-06 16:50:04.442 +01:00 [INF] Executed endpoint 'cleanarch4.Web.Endpoints.ProjectEndpoints.Create.HandleAsync (cleanarch4.Web)'
+2022-11-06 16:50:04.445 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:57679/Projects application/json-patch+json 46 - 200 48 application/json;+charset=utf-8 498.2678ms
+2022-11-06 16:50:45.276 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/Projects/2 - -
+2022-11-06 16:50:45.277 +01:00 [INF] Executing endpoint 'cleanarch4.Web.Endpoints.ProjectEndpoints.GetById.HandleAsync (cleanarch4.Web)'
+2022-11-06 16:50:45.289 +01:00 [INF] Route matched with {action = "Handle", controller = "GetById", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[cleanarch4.Web.Endpoints.ProjectEndpoints.GetProjectByIdResponse]] HandleAsync(cleanarch4.Web.Endpoints.ProjectEndpoints.GetProjectByIdRequest, System.Threading.CancellationToken) on controller cleanarch4.Web.Endpoints.ProjectEndpoints.GetById (cleanarch4.Web).
+2022-11-06 16:50:45.325 +01:00 [INF] Entity Framework Core 6.0.8 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.8' with options: None
+2022-11-06 16:50:45.467 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__projectId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "t"."Id", "t"."Name", "t"."Priority", "t0"."Id", "t0"."Description", "t0"."IsDone", "t0"."ProjectId", "t0"."Title"
+FROM (
+    SELECT "p"."Id", "p"."Name", "p"."Priority"
+    FROM "Projects" AS "p"
+    WHERE "p"."Id" = @__projectId_0
+    LIMIT 1
+) AS "t"
+LEFT JOIN "ToDoItems" AS "t0" ON "t"."Id" = "t0"."ProjectId"
+ORDER BY "t"."Id"
+2022-11-06 16:50:45.477 +01:00 [INF] Executing OkObjectResult, writing value of type 'cleanarch4.Web.Endpoints.ProjectEndpoints.GetProjectByIdResponse'.
+2022-11-06 16:50:45.485 +01:00 [INF] Executed action cleanarch4.Web.Endpoints.ProjectEndpoints.GetById.HandleAsync (cleanarch4.Web) in 195.0701ms
+2022-11-06 16:50:45.485 +01:00 [INF] Executed endpoint 'cleanarch4.Web.Endpoints.ProjectEndpoints.GetById.HandleAsync (cleanarch4.Web)'
+2022-11-06 16:50:45.485 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/Projects/2 - - - 200 59 application/json;+charset=utf-8 209.5352ms

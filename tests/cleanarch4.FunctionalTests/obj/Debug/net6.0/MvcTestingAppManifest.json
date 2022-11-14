@@ -1,0 +1,7 @@
+{
+  "cleanarch4.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "\/Users\/maciejw\/Projects\/cleanarch4\/src\/cleanarch4.Core",
+  "cleanarch4.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "\/Users\/maciejw\/Projects\/cleanarch4\/src\/cleanarch4.Infrastructure",
+  "cleanarch4.SharedKernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "\/Users\/maciejw\/Projects\/cleanarch4\/src\/cleanarch4.SharedKernel",
+  "cleanarch4.UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "\/Users\/maciejw\/Projects\/cleanarch4\/tests\/cleanarch4.UnitTests",
+  "cleanarch4.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "\/Users\/maciejw\/Projects\/cleanarch4\/src\/cleanarch4.Web"
+}

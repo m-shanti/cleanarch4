@@ -1,0 +1,12 @@
+/Users/maciejw/Projects/cleanarch4/src/cleanarch4.SharedKernel/bin/Debug/net6.0/cleanarch4.SharedKernel.deps.json
+/Users/maciejw/Projects/cleanarch4/src/cleanarch4.SharedKernel/bin/Debug/net6.0/cleanarch4.SharedKernel.dll
+/Users/maciejw/Projects/cleanarch4/src/cleanarch4.SharedKernel/bin/Debug/net6.0/cleanarch4.SharedKernel.pdb
+/Users/maciejw/Projects/cleanarch4/src/cleanarch4.SharedKernel/obj/Debug/net6.0/cleanarch4.SharedKernel.csproj.AssemblyReference.cache
+/Users/maciejw/Projects/cleanarch4/src/cleanarch4.SharedKernel/obj/Debug/net6.0/cleanarch4.SharedKernel.GeneratedMSBuildEditorConfig.editorconfig
+/Users/maciejw/Projects/cleanarch4/src/cleanarch4.SharedKernel/obj/Debug/net6.0/cleanarch4.SharedKernel.AssemblyInfoInputs.cache
+/Users/maciejw/Projects/cleanarch4/src/cleanarch4.SharedKernel/obj/Debug/net6.0/cleanarch4.SharedKernel.AssemblyInfo.cs
+/Users/maciejw/Projects/cleanarch4/src/cleanarch4.SharedKernel/obj/Debug/net6.0/cleanarch4.SharedKernel.csproj.CoreCompileInputs.cache
+/Users/maciejw/Projects/cleanarch4/src/cleanarch4.SharedKernel/obj/Debug/net6.0/cleanarch4.SharedKernel.dll
+/Users/maciejw/Projects/cleanarch4/src/cleanarch4.SharedKernel/obj/Debug/net6.0/refint/cleanarch4.SharedKernel.dll
+/Users/maciejw/Projects/cleanarch4/src/cleanarch4.SharedKernel/obj/Debug/net6.0/cleanarch4.SharedKernel.pdb
+/Users/maciejw/Projects/cleanarch4/src/cleanarch4.SharedKernel/obj/Debug/net6.0/ref/cleanarch4.SharedKernel.dll

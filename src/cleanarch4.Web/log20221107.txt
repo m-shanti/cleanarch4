@@ -1,0 +1,6 @@
+2022-11-07 10:51:46.178 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/swagger-ui.css - -
+2022-11-07 10:51:46.191 +01:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2022-11-07 10:51:46.191 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/swagger-ui.css - - - 200 143943 text/css 16.1283ms
+2022-11-07 10:51:46.330 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - -
+2022-11-07 10:51:46.353 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 22.7533ms
+2022-11-07 21:56:46.178 +01:00 [INF] Application is shutting down...
