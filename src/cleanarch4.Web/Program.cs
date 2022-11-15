@@ -10,6 +10,8 @@ using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddHealthChecks();
+
 builder.Host.UseServiceProviderFactory(new AutofacServiceProviderFactory());
 
 builder.Host.UseSerilog((_, config) => config.ReadFrom.Configuration(builder.Configuration));
@@ -80,6 +82,8 @@ app.UseEndpoints(endpoints =>
   endpoints.MapDefaultControllerRoute();
   endpoints.MapRazorPages();
 });
+
+app.MapHealthChecks("/healthz");
 
 // Seed Database
 using (var scope = app.Services.CreateScope())
