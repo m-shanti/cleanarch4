@@ -2,11 +2,12 @@
 using cleanarch4.Core.ProjectAggregate;
 using cleanarch4.SharedKernel;
 using cleanarch4.SharedKernel.Interfaces;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace cleanarch4.Infrastructure.Data;
 
-public class AppDbContext : DbContext
+public class AppDbContext : IdentityDbContext<ApplicationUser>
 {
   private readonly IDomainEventDispatcher? _dispatcher;
 
@@ -14,7 +15,7 @@ public class AppDbContext : DbContext
     IDomainEventDispatcher? dispatcher)
       : base(options)
   {
-    _dispatcher = dispatcher;
+    _dispatcher = dispatcher; 
   }
 
   public DbSet<ToDoItem> ToDoItems => Set<ToDoItem>();

@@ -5,6 +5,7 @@ using cleanarch4.Core;
 using cleanarch4.Infrastructure;
 using cleanarch4.Infrastructure.Data;
 using cleanarch4.Web;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using Serilog;
 
@@ -24,7 +25,13 @@ builder.Services.Configure<CookiePolicyOptions>(options =>
 
 string connectionString = builder.Configuration.GetConnectionString("SqliteConnection");  //Configuration.GetConnectionString("DefaultConnection");
 
-builder.Services.AddDbContext(connectionString);
+builder.Services.AddDbContext(connectionString); // look inside
+
+builder.Services.AddDefaultIdentity<ApplicationUser>(options =>
+  {
+    options.SignIn.RequireConfirmedAccount = true;
+  })
+  .AddEntityFrameworkStores<AppDbContext>();
 
 builder.Services.AddControllersWithViews().AddNewtonsoftJson();
 builder.Services.AddRazorPages();
@@ -67,6 +74,8 @@ else
 }
 app.UseRouting();
 
+app.UseAuthentication();
+
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseCookiePolicy();
@@ -93,7 +102,7 @@ using (var scope = app.Services.CreateScope())
   try
   {
     var context = services.GetRequiredService<AppDbContext>();
-    //                    context.Database.Migrate();
+    //context.Database.Migrate();
     context.Database.EnsureCreated();
     SeedData.Initialize(services);
   }
