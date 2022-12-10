@@ -2,11 +2,13 @@
 using cleanarch4.Core.ProjectAggregate.Specifications;
 using cleanarch4.SharedKernel.Interfaces;
 using cleanarch4.Web.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace cleanarch4.Web.Controllers;
 
 [Route("[controller]")]
+[Authorize]
 public class ProjectController : Controller
 {
   private readonly IRepository<Project> _projectRepository;

@@ -33,6 +33,12 @@ builder.Services.AddDefaultIdentity<ApplicationUser>(options =>
   })
   .AddEntityFrameworkStores<AppDbContext>();
 
+builder.Services.AddAuthentication().AddGoogle(googleOptions =>
+{
+  googleOptions.ClientId = "131297295554-b6lpi1aqobvscii7qr6ss96f3rmsf54e.apps.googleusercontent.com";
+  googleOptions.ClientSecret = "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";
+});
+
 builder.Services.AddControllersWithViews().AddNewtonsoftJson();
 builder.Services.AddRazorPages();
 
@@ -75,6 +81,7 @@ else
 app.UseRouting();
 
 app.UseAuthentication();
+app.UseAuthorization();
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
