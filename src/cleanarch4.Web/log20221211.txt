@@ -543,3 +543,279 @@ SELECT EXISTS (
 2022-12-11 12:16:49.094 +01:00 [INF] Executed endpoint 'cleanarch4.Web.Controllers.HomeController.Index (cleanarch4.Web)'
 2022-12-11 12:16:49.099 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:57680/ - - - 200 - text/html;+charset=utf-8 283.9201ms
 2022-12-11 12:17:22.737 +01:00 [INF] Application is shutting down...
+2022-12-11 12:35:48.930 +01:00 [INF] User profile is available. Using '/Users/maciejw/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-12-11 12:35:49.681 +01:00 [INF] Entity Framework Core 6.0.8 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.8' with options: None
+2022-12-11 12:35:49.733 +01:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2022-12-11 12:35:49.741 +01:00 [INF] Entity Framework Core 6.0.8 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.8' with options: None
+2022-12-11 12:35:49.848 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "ToDoItems" AS "t")
+2022-12-11 12:35:49.991 +01:00 [INF] Now listening on: https://localhost:57680
+2022-12-11 12:35:49.991 +01:00 [INF] Now listening on: http://localhost:57679
+2022-12-11 12:35:49.992 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-11 12:35:49.992 +01:00 [INF] Hosting environment: Development
+2022-12-11 12:35:49.992 +01:00 [INF] Content root path: /Users/maciejw/Projects/cleanarch4/src/cleanarch4.Web/
+2022-12-11 12:35:50.656 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:57680/ - -
+2022-12-11 12:35:50.832 +01:00 [INF] Executing endpoint 'cleanarch4.Web.Controllers.HomeController.Index (cleanarch4.Web)'
+2022-12-11 12:35:50.846 +01:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller cleanarch4.Web.Controllers.HomeController (cleanarch4.Web).
+2022-12-11 12:35:50.855 +01:00 [INF] Executing ViewResult, running view Index.
+2022-12-11 12:35:51.013 +01:00 [INF] Executed ViewResult - view Index executed in 157.2887ms.
+2022-12-11 12:35:51.013 +01:00 [INF] Executed action cleanarch4.Web.Controllers.HomeController.Index (cleanarch4.Web) in 166.7155ms
+2022-12-11 12:35:51.013 +01:00 [INF] Executed endpoint 'cleanarch4.Web.Controllers.HomeController.Index (cleanarch4.Web)'
+2022-12-11 12:35:51.024 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:57680/ - - - 200 - text/html;+charset=utf-8 369.1137ms
+2022-12-11 12:35:51.029 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:57680/lib/bootstrap/dist/css/bootstrap.min.css - -
+2022-12-11 12:35:51.057 +01:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: '/Users/maciejw/Projects/cleanarch4/src/cleanarch4.Web/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css'
+2022-12-11 12:35:51.062 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:57680/lib/bootstrap/dist/css/bootstrap.min.css - - - 200 162726 text/css 32.1515ms
+2022-12-11 12:35:51.062 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:57680/cleanarch4.Web.styles.css?v=G9jpTKqWZX1RL2PiuPAqAdWQaUBS3_Mp7b7V8IuYzIA - -
+2022-12-11 12:35:51.065 +01:00 [INF] Sending file. Request path: '/cleanarch4.Web.styles.css'. Physical path: '/Users/maciejw/Projects/cleanarch4/src/cleanarch4.Web/obj/Debug/net6.0/scopedcss/bundle/cleanarch4.Web.styles.css'
+2022-12-11 12:35:51.065 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:57680/cleanarch4.Web.styles.css?v=G9jpTKqWZX1RL2PiuPAqAdWQaUBS3_Mp7b7V8IuYzIA - - - 200 1082 text/css 3.1002ms
+2022-12-11 12:35:51.066 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:57680/css/site.css?v=AKvNjO3dCPPS0eSU1Ez8T2wI280i08yGycV9ndytL-c - -
+2022-12-11 12:35:51.067 +01:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: '/Users/maciejw/Projects/cleanarch4/src/cleanarch4.Web/wwwroot/css/site.css'
+2022-12-11 12:35:51.067 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:57680/css/site.css?v=AKvNjO3dCPPS0eSU1Ez8T2wI280i08yGycV9ndytL-c - - - 200 194 text/css 1.0294ms
+2022-12-11 12:35:51.071 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:57680/lib/jquery/dist/jquery.min.js - -
+2022-12-11 12:35:51.074 +01:00 [INF] Sending file. Request path: '/lib/jquery/dist/jquery.min.js'. Physical path: '/Users/maciejw/Projects/cleanarch4/src/cleanarch4.Web/wwwroot/lib/jquery/dist/jquery.min.js'
+2022-12-11 12:35:51.074 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:57680/lib/jquery/dist/jquery.min.js - - - 200 89478 application/javascript 2.9246ms
+2022-12-11 12:35:51.078 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:57680/lib/bootstrap/dist/js/bootstrap.bundle.min.js - -
+2022-12-11 12:35:51.081 +01:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: '/Users/maciejw/Projects/cleanarch4/src/cleanarch4.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js'
+2022-12-11 12:35:51.082 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:57680/lib/bootstrap/dist/js/bootstrap.bundle.min.js - - - 200 78474 application/javascript 3.7197ms
+2022-12-11 12:35:51.085 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:57680/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - -
+2022-12-11 12:35:51.087 +01:00 [INF] Sending file. Request path: '/js/site.js'. Physical path: '/Users/maciejw/Projects/cleanarch4/src/cleanarch4.Web/wwwroot/js/site.js'
+2022-12-11 12:35:51.088 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:57680/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - - - 200 230 application/javascript 2.8828ms
+2022-12-11 12:35:56.617 +01:00 [INF] Request starting HTTP/1.1 POST https://localhost:57680/Identity/Account/Logout?returnUrl=%2F%3Fpage%3D%252F application/x-www-form-urlencoded 225
+2022-12-11 12:35:56.622 +01:00 [INF] Executing endpoint '/Account/Logout'
+2022-12-11 12:35:56.654 +01:00 [INF] Route matched with {page = "/Account/Logout", area = "Identity", action = "", controller = ""}. Executing page /Account/Logout
+2022-12-11 12:35:56.697 +01:00 [INF] Executing handler method Microsoft.AspNetCore.Identity.UI.V5.Pages.Account.Internal.LogoutModel.OnPost - ModelState is "Valid"
+2022-12-11 12:35:56.704 +01:00 [INF] AuthenticationScheme: Identity.Application signed out.
+2022-12-11 12:35:56.705 +01:00 [INF] AuthenticationScheme: Identity.External signed out.
+2022-12-11 12:35:56.705 +01:00 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2022-12-11 12:35:56.705 +01:00 [INF] User logged out.
+2022-12-11 12:35:56.706 +01:00 [INF] Executed handler method OnPost, returned result Microsoft.AspNetCore.Mvc.LocalRedirectResult.
+2022-12-11 12:35:56.706 +01:00 [INF] Executing LocalRedirectResult, redirecting to /?page=%2F.
+2022-12-11 12:35:56.706 +01:00 [INF] Executed page /Account/Logout in 51.9927ms
+2022-12-11 12:35:56.706 +01:00 [INF] Executed endpoint '/Account/Logout'
+2022-12-11 12:35:56.706 +01:00 [INF] Request finished HTTP/1.1 POST https://localhost:57680/Identity/Account/Logout?returnUrl=%2F%3Fpage%3D%252F application/x-www-form-urlencoded 225 - 302 0 - 89.4661ms
+2022-12-11 12:35:56.709 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:57680/?page=%2F - -
+2022-12-11 12:35:56.709 +01:00 [INF] Executing endpoint 'cleanarch4.Web.Controllers.HomeController.Index (cleanarch4.Web)'
+2022-12-11 12:35:56.709 +01:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller cleanarch4.Web.Controllers.HomeController (cleanarch4.Web).
+2022-12-11 12:35:56.709 +01:00 [INF] Executing ViewResult, running view Index.
+2022-12-11 12:35:56.713 +01:00 [INF] Executed ViewResult - view Index executed in 3.5325ms.
+2022-12-11 12:35:56.713 +01:00 [INF] Executed action cleanarch4.Web.Controllers.HomeController.Index (cleanarch4.Web) in 3.8097ms
+2022-12-11 12:35:56.713 +01:00 [INF] Executed endpoint 'cleanarch4.Web.Controllers.HomeController.Index (cleanarch4.Web)'
+2022-12-11 12:35:56.713 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:57680/?page=%2F - - - 200 - text/html;+charset=utf-8 4.4446ms
+2022-12-11 12:35:57.725 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:57680/Identity/Account/Register - -
+2022-12-11 12:35:57.732 +01:00 [INF] Executing endpoint '/Account/Register'
+2022-12-11 12:35:57.747 +01:00 [INF] Route matched with {page = "/Account/Register", area = "Identity", action = "", controller = ""}. Executing page /Account/Register
+2022-12-11 12:35:57.749 +01:00 [INF] Executed page /Account/Register in 1.4787ms
+2022-12-11 12:35:57.750 +01:00 [INF] Executed endpoint '/Account/Register'
+2022-12-11 12:35:57.754 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.AspNetCore.Identity.UserManager`1[Microsoft.AspNetCore.Identity.IdentityUser]' while attempting to activate 'cleanarch4.Web.Areas.Identity.Pages.Account.RegisterModel'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method659(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.DefaultPageModelActivatorProvider.<>c__DisplayClass3_0.<CreateActivator>b__0(PageContext context)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.DefaultPageModelFactoryProvider.<>c__DisplayClass3_0.<CreateModelFactory>b__0(PageContext pageContext)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.CreateInstance()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Ardalis.ListStartupServices.ShowAllServicesMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-12-11 12:35:57.801 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:57680/Identity/Account/Register - - - 500 - text/html;+charset=utf-8 75.8640ms
+2022-12-11 12:37:09.418 +01:00 [INF] Application is shutting down...
+2022-12-11 12:39:20.488 +01:00 [INF] User profile is available. Using '/Users/maciejw/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-12-11 12:39:21.173 +01:00 [INF] Entity Framework Core 6.0.8 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.8' with options: None
+2022-12-11 12:39:21.221 +01:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2022-12-11 12:39:21.227 +01:00 [INF] Entity Framework Core 6.0.8 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.8' with options: None
+2022-12-11 12:39:21.330 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "ToDoItems" AS "t")
+2022-12-11 12:39:21.460 +01:00 [INF] Now listening on: https://localhost:57680
+2022-12-11 12:39:21.460 +01:00 [INF] Now listening on: http://localhost:57679
+2022-12-11 12:39:21.461 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-11 12:39:21.462 +01:00 [INF] Hosting environment: Development
+2022-12-11 12:39:21.462 +01:00 [INF] Content root path: /Users/maciejw/Projects/cleanarch4/src/cleanarch4.Web/
+2022-12-11 12:39:22.023 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:57680/ - -
+2022-12-11 12:39:22.099 +01:00 [INF] Executing endpoint 'cleanarch4.Web.Controllers.HomeController.Index (cleanarch4.Web)'
+2022-12-11 12:39:22.103 +01:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller cleanarch4.Web.Controllers.HomeController (cleanarch4.Web).
+2022-12-11 12:39:22.111 +01:00 [INF] Executing ViewResult, running view Index.
+2022-12-11 12:39:22.258 +01:00 [INF] Executed ViewResult - view Index executed in 149.0507ms.
+2022-12-11 12:39:22.258 +01:00 [INF] Executed action cleanarch4.Web.Controllers.HomeController.Index (cleanarch4.Web) in 154.8192ms
+2022-12-11 12:39:22.258 +01:00 [INF] Executed endpoint 'cleanarch4.Web.Controllers.HomeController.Index (cleanarch4.Web)'
+2022-12-11 12:39:22.264 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:57680/ - - - 200 - text/html;+charset=utf-8 243.8823ms
+2022-12-11 12:39:22.280 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:57680/lib/bootstrap/dist/css/bootstrap.min.css - -
+2022-12-11 12:39:22.316 +01:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: '/Users/maciejw/Projects/cleanarch4/src/cleanarch4.Web/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css'
+2022-12-11 12:39:22.319 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:57680/lib/bootstrap/dist/css/bootstrap.min.css - - - 200 162726 text/css 38.2875ms
+2022-12-11 12:39:22.319 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:57680/cleanarch4.Web.styles.css?v=G9jpTKqWZX1RL2PiuPAqAdWQaUBS3_Mp7b7V8IuYzIA - -
+2022-12-11 12:39:22.321 +01:00 [INF] Sending file. Request path: '/cleanarch4.Web.styles.css'. Physical path: '/Users/maciejw/Projects/cleanarch4/src/cleanarch4.Web/obj/Debug/net6.0/scopedcss/bundle/cleanarch4.Web.styles.css'
+2022-12-11 12:39:22.321 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:57680/cleanarch4.Web.styles.css?v=G9jpTKqWZX1RL2PiuPAqAdWQaUBS3_Mp7b7V8IuYzIA - - - 200 1082 text/css 2.2965ms
+2022-12-11 12:39:22.322 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:57680/css/site.css?v=AKvNjO3dCPPS0eSU1Ez8T2wI280i08yGycV9ndytL-c - -
+2022-12-11 12:39:22.323 +01:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: '/Users/maciejw/Projects/cleanarch4/src/cleanarch4.Web/wwwroot/css/site.css'
+2022-12-11 12:39:22.323 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:57680/css/site.css?v=AKvNjO3dCPPS0eSU1Ez8T2wI280i08yGycV9ndytL-c - - - 200 194 text/css 0.6345ms
+2022-12-11 12:39:22.323 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:57680/lib/jquery/dist/jquery.min.js - -
+2022-12-11 12:39:22.327 +01:00 [INF] Sending file. Request path: '/lib/jquery/dist/jquery.min.js'. Physical path: '/Users/maciejw/Projects/cleanarch4/src/cleanarch4.Web/wwwroot/lib/jquery/dist/jquery.min.js'
+2022-12-11 12:39:22.328 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:57680/lib/jquery/dist/jquery.min.js - - - 200 89478 application/javascript 4.3422ms
+2022-12-11 12:39:22.328 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:57680/lib/bootstrap/dist/js/bootstrap.bundle.min.js - -
+2022-12-11 12:39:22.330 +01:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: '/Users/maciejw/Projects/cleanarch4/src/cleanarch4.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js'
+2022-12-11 12:39:22.331 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:57680/lib/bootstrap/dist/js/bootstrap.bundle.min.js - - - 200 78474 application/javascript 1.7759ms
+2022-12-11 12:39:22.332 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:57680/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - -
+2022-12-11 12:39:22.333 +01:00 [INF] Sending file. Request path: '/js/site.js'. Physical path: '/Users/maciejw/Projects/cleanarch4/src/cleanarch4.Web/wwwroot/js/site.js'
+2022-12-11 12:39:22.334 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:57680/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - - - 200 230 application/javascript 1.9319ms
+2022-12-11 12:39:24.061 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:57680/Identity/Account/Register - -
+2022-12-11 12:39:24.063 +01:00 [INF] Executing endpoint '/Account/Register'
+2022-12-11 12:39:24.091 +01:00 [INF] Route matched with {page = "/Account/Register", area = "Identity", action = "", controller = ""}. Executing page /Account/Register
+2022-12-11 12:39:24.094 +01:00 [INF] Executed page /Account/Register in 2.7182ms
+2022-12-11 12:39:24.095 +01:00 [INF] Executed endpoint '/Account/Register'
+2022-12-11 12:39:24.099 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.AspNetCore.Identity.UserManager`1[Microsoft.AspNetCore.Identity.IdentityUser]' while attempting to activate 'cleanarch4.Web.Areas.Identity.Pages.Account.RegisterModel'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method638(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.DefaultPageModelActivatorProvider.<>c__DisplayClass3_0.<CreateActivator>b__0(PageContext context)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.DefaultPageModelFactoryProvider.<>c__DisplayClass3_0.<CreateModelFactory>b__0(PageContext pageContext)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.CreateInstance()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Ardalis.ListStartupServices.ShowAllServicesMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-12-11 12:39:24.135 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:57680/Identity/Account/Register - - - 500 - text/html;+charset=utf-8 73.9814ms
+2022-12-11 12:42:46.624 +01:00 [INF] Application is shutting down...
+2022-12-11 12:44:02.921 +01:00 [INF] User profile is available. Using '/Users/maciejw/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-12-11 12:44:03.628 +01:00 [INF] Entity Framework Core 6.0.8 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.8' with options: None
+2022-12-11 12:44:03.686 +01:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2022-12-11 12:44:03.694 +01:00 [INF] Entity Framework Core 6.0.8 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.8' with options: None
+2022-12-11 12:44:03.796 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "ToDoItems" AS "t")
+2022-12-11 12:44:03.929 +01:00 [INF] Now listening on: https://localhost:57680
+2022-12-11 12:44:03.929 +01:00 [INF] Now listening on: http://localhost:57679
+2022-12-11 12:44:03.930 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-11 12:44:03.930 +01:00 [INF] Hosting environment: Development
+2022-12-11 12:44:03.930 +01:00 [INF] Content root path: /Users/maciejw/Projects/cleanarch4/src/cleanarch4.Web/
+2022-12-11 12:44:04.653 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:57680/ - -
+2022-12-11 12:44:04.731 +01:00 [INF] Executing endpoint 'cleanarch4.Web.Controllers.HomeController.Index (cleanarch4.Web)'
+2022-12-11 12:44:04.735 +01:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller cleanarch4.Web.Controllers.HomeController (cleanarch4.Web).
+2022-12-11 12:44:04.741 +01:00 [INF] Executing ViewResult, running view Index.
+2022-12-11 12:44:04.897 +01:00 [INF] Executed ViewResult - view Index executed in 155.8144ms.
+2022-12-11 12:44:04.897 +01:00 [INF] Executed action cleanarch4.Web.Controllers.HomeController.Index (cleanarch4.Web) in 161.6732ms
+2022-12-11 12:44:04.897 +01:00 [INF] Executed endpoint 'cleanarch4.Web.Controllers.HomeController.Index (cleanarch4.Web)'
+2022-12-11 12:44:04.903 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:57680/ - - - 200 - text/html;+charset=utf-8 251.7320ms
+2022-12-11 12:44:04.923 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:57680/lib/bootstrap/dist/css/bootstrap.min.css - -
+2022-12-11 12:44:04.957 +01:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: '/Users/maciejw/Projects/cleanarch4/src/cleanarch4.Web/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css'
+2022-12-11 12:44:04.959 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:57680/lib/bootstrap/dist/css/bootstrap.min.css - - - 200 162726 text/css 36.2769ms
+2022-12-11 12:44:04.960 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:57680/cleanarch4.Web.styles.css?v=G9jpTKqWZX1RL2PiuPAqAdWQaUBS3_Mp7b7V8IuYzIA - -
+2022-12-11 12:44:04.963 +01:00 [INF] Sending file. Request path: '/cleanarch4.Web.styles.css'. Physical path: '/Users/maciejw/Projects/cleanarch4/src/cleanarch4.Web/obj/Debug/net6.0/scopedcss/bundle/cleanarch4.Web.styles.css'
+2022-12-11 12:44:04.963 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:57680/cleanarch4.Web.styles.css?v=G9jpTKqWZX1RL2PiuPAqAdWQaUBS3_Mp7b7V8IuYzIA - - - 200 1082 text/css 3.6546ms
+2022-12-11 12:44:04.965 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:57680/css/site.css?v=AKvNjO3dCPPS0eSU1Ez8T2wI280i08yGycV9ndytL-c - -
+2022-12-11 12:44:04.965 +01:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: '/Users/maciejw/Projects/cleanarch4/src/cleanarch4.Web/wwwroot/css/site.css'
+2022-12-11 12:44:04.965 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:57680/css/site.css?v=AKvNjO3dCPPS0eSU1Ez8T2wI280i08yGycV9ndytL-c - - - 200 194 text/css 0.8261ms
+2022-12-11 12:44:04.966 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:57680/lib/jquery/dist/jquery.min.js - -
+2022-12-11 12:44:04.967 +01:00 [INF] Sending file. Request path: '/lib/jquery/dist/jquery.min.js'. Physical path: '/Users/maciejw/Projects/cleanarch4/src/cleanarch4.Web/wwwroot/lib/jquery/dist/jquery.min.js'
+2022-12-11 12:44:04.968 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:57680/lib/jquery/dist/jquery.min.js - - - 200 89478 application/javascript 1.5418ms
+2022-12-11 12:44:04.968 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:57680/lib/bootstrap/dist/js/bootstrap.bundle.min.js - -
+2022-12-11 12:44:04.970 +01:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: '/Users/maciejw/Projects/cleanarch4/src/cleanarch4.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js'
+2022-12-11 12:44:04.970 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:57680/lib/bootstrap/dist/js/bootstrap.bundle.min.js - - - 200 78474 application/javascript 1.6489ms
+2022-12-11 12:44:04.973 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:57680/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - -
+2022-12-11 12:44:04.975 +01:00 [INF] Sending file. Request path: '/js/site.js'. Physical path: '/Users/maciejw/Projects/cleanarch4/src/cleanarch4.Web/wwwroot/js/site.js'
+2022-12-11 12:44:04.975 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:57680/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - - - 200 230 application/javascript 1.9225ms
+2022-12-11 12:44:06.506 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:57680/Identity/Account/Register - -
+2022-12-11 12:44:06.508 +01:00 [INF] Executing endpoint '/Account/Register'
+2022-12-11 12:44:06.537 +01:00 [INF] Route matched with {page = "/Account/Register", area = "Identity", action = "", controller = ""}. Executing page /Account/Register
+2022-12-11 12:44:06.561 +01:00 [INF] Executing handler method cleanarch4.Web.Areas.Identity.Pages.Account.RegisterModel.OnGetAsync - ModelState is "Valid"
+2022-12-11 12:44:06.564 +01:00 [INF] Executed handler method OnGetAsync, returned result .
+2022-12-11 12:44:06.569 +01:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2022-12-11 12:44:06.570 +01:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2022-12-11 12:44:06.612 +01:00 [INF] Executed page /Account/Register in 74.9265ms
+2022-12-11 12:44:06.612 +01:00 [INF] Executed endpoint '/Account/Register'
+2022-12-11 12:44:06.612 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:57680/Identity/Account/Register - - - 200 - text/html;+charset=utf-8 106.2960ms
+2022-12-11 12:44:06.631 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:57680/Identity/lib/jquery-validation/dist/jquery.validate.js - -
+2022-12-11 12:44:06.634 +01:00 [INF] Sending file. Request path: '/Identity/lib/jquery-validation/dist/jquery.validate.js'. Physical path: '/Users/maciejw/.nuget/packages/microsoft.aspnetcore.identity.ui/6.0.8/staticwebassets/V5/lib/jquery-validation/dist/jquery.validate.js'
+2022-12-11 12:44:06.634 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:57680/Identity/lib/jquery-validation/dist/jquery.validate.js - - - 200 48676 application/javascript 2.5561ms
+2022-12-11 12:44:06.636 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:57680/Identity/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js - -
+2022-12-11 12:44:06.638 +01:00 [INF] Sending file. Request path: '/Identity/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js'. Physical path: '/Users/maciejw/.nuget/packages/microsoft.aspnetcore.identity.ui/6.0.8/staticwebassets/V5/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js'
+2022-12-11 12:44:06.638 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:57680/Identity/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js - - - 200 19366 application/javascript 1.9817ms
+2022-12-11 12:44:22.718 +01:00 [INF] Request starting HTTP/1.1 POST https://localhost:57680/Identity/Account/Register application/x-www-form-urlencoded 266
+2022-12-11 12:44:22.727 +01:00 [INF] Executing endpoint '/Account/Register'
+2022-12-11 12:44:22.728 +01:00 [INF] Route matched with {page = "/Account/Register", area = "Identity", action = "", controller = ""}. Executing page /Account/Register
+2022-12-11 12:44:22.765 +01:00 [INF] Executing handler method cleanarch4.Web.Areas.Identity.Pages.Account.RegisterModel.OnPostAsync - ModelState is "Valid"
+2022-12-11 12:44:22.920 +01:00 [INF] Entity Framework Core 6.0.8 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.8' with options: None
+2022-12-11 12:44:23.021 +01:00 [INF] Executed DbCommand (9ms) [Parameters=[@__normalizedUserName_0='?' (Size = 10)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2022-12-11 12:44:23.164 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 36), @p1='?' (DbType = Int32), @p2='?' (Size = 36), @p3='?' (Size = 10), @p4='?' (DbType = Boolean), @p5='?' (DbType = Boolean), @p6='?' (DbType = DateTimeOffset), @p7='?' (Size = 10), @p8='?' (Size = 10), @p9='?' (Size = 84), @p10='?', @p11='?' (DbType = Boolean), @p12='?' (Size = 32), @p13='?' (DbType = Boolean), @p14='?' (Size = 10)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "AspNetUsers" ("Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14);
+2022-12-11 12:44:23.180 +01:00 [INF] User created a new account with password.
+2022-12-11 12:44:23.183 +01:00 [INF] Executed handler method OnPostAsync, returned result Microsoft.AspNetCore.Mvc.RedirectToPageResult.
+2022-12-11 12:44:23.183 +01:00 [INF] Executing RedirectToPageResult, redirecting to RegisterConfirmation.
+2022-12-11 12:44:23.183 +01:00 [INF] Executed page /Account/Register in 454.7542ms
+2022-12-11 12:44:23.183 +01:00 [INF] Executed endpoint '/Account/Register'
+2022-12-11 12:44:23.184 +01:00 [INF] Request finished HTTP/1.1 POST https://localhost:57680/Identity/Account/Register application/x-www-form-urlencoded 266 - 302 0 - 466.6298ms
+2022-12-11 12:44:23.186 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:57680/Identity/Account/RegisterConfirmation?email=mw2@djc.pl&returnUrl=%2F - -
+2022-12-11 12:44:23.187 +01:00 [INF] Executing endpoint '/Account/RegisterConfirmation'
+2022-12-11 12:44:23.189 +01:00 [INF] Route matched with {page = "/Account/RegisterConfirmation", area = "Identity", action = "", controller = ""}. Executing page /Account/RegisterConfirmation
+2022-12-11 12:44:23.193 +01:00 [INF] Executing handler method Microsoft.AspNetCore.Identity.UI.V5.Pages.Account.Internal.RegisterConfirmationModel.OnGetAsync - ModelState is "Valid"
+2022-12-11 12:44:23.195 +01:00 [INF] Entity Framework Core 6.0.8 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.8' with options: None
+2022-12-11 12:44:23.201 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedEmail_0='?' (Size = 10)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2022-12-11 12:44:23.206 +01:00 [INF] Executed handler method OnGetAsync, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2022-12-11 12:44:23.214 +01:00 [INF] Executed page /Account/RegisterConfirmation in 24.9666ms
+2022-12-11 12:44:23.214 +01:00 [INF] Executed endpoint '/Account/RegisterConfirmation'
+2022-12-11 12:44:23.215 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:57680/Identity/Account/RegisterConfirmation?email=mw2@djc.pl&returnUrl=%2F - - - 200 - text/html;+charset=utf-8 28.0814ms
+2022-12-11 12:44:23.287 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:57680/favicon.ico - -
+2022-12-11 12:44:23.288 +01:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: '/Users/maciejw/Projects/cleanarch4/src/cleanarch4.Web/wwwroot/favicon.ico'
+2022-12-11 12:44:23.288 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:57680/favicon.ico - - - 200 5430 image/x-icon 1.4236ms
+2022-12-11 12:44:26.340 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:57680/Identity/Account/ConfirmEmail?userId=b4433b20-d081-436d-a07d-5a46f97e2b6d&code=Q2ZESjhMdGlIWHpkVVNaRm1UYm9neXhWdnljYlhPRlZFL3ZyMUh6ZFEyRytJV1phbUM3aGxSQ1ZZWjZBUDNqbDV5bFo5QWZQSncwMHozMkVqM3g4Vmxxdy9KN3lBekd4VEVPcjJCNGNraGozNUpiS1piK2x1aWpDaFFlVHM1eVN2MlA0ZUZ2dmdLaE9NNXdWeHIvaXVVeDdTS21VbkdoWHJnaEdDOXFMeHpGMHpxQW9FN2RrcUR0dlkrd1hISFVkZ2xZbXVOTEFWRFRETklYQVRlZDdtTUxBSnVSS0tyMEF5QTFrQTRQZXQ4WmFyakc0TDVNYXBXMEdQbk1FU0VkenhRY0phQT09&returnUrl=%2F - -
+2022-12-11 12:44:26.352 +01:00 [INF] Executing endpoint '/Account/ConfirmEmail'
+2022-12-11 12:44:26.357 +01:00 [INF] Route matched with {page = "/Account/ConfirmEmail", area = "Identity", action = "", controller = ""}. Executing page /Account/ConfirmEmail
+2022-12-11 12:44:26.376 +01:00 [INF] Executing handler method Microsoft.AspNetCore.Identity.UI.V5.Pages.Account.Internal.ConfirmEmailModel.OnGetAsync - ModelState is "Valid"
+2022-12-11 12:44:26.401 +01:00 [INF] Entity Framework Core 6.0.8 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.8' with options: None
+2022-12-11 12:44:26.427 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."Id" = @__p_0
+LIMIT 1
+2022-12-11 12:44:26.433 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedUserName_0='?' (Size = 10)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2022-12-11 12:44:26.448 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@p14='?' (Size = 36), @p0='?' (DbType = Int32), @p1='?' (Size = 36), @p15='?' (Size = 36), @p2='?' (Size = 10), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTimeOffset), @p6='?' (Size = 10), @p7='?' (Size = 10), @p8='?' (Size = 84), @p9='?', @p10='?' (DbType = Boolean), @p11='?' (Size = 32), @p12='?' (DbType = Boolean), @p13='?' (Size = 10)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "Email" = @p2, "EmailConfirmed" = @p3, "LockoutEnabled" = @p4, "LockoutEnd" = @p5, "NormalizedEmail" = @p6, "NormalizedUserName" = @p7, "PasswordHash" = @p8, "PhoneNumber" = @p9, "PhoneNumberConfirmed" = @p10, "SecurityStamp" = @p11, "TwoFactorEnabled" = @p12, "UserName" = @p13
+WHERE "Id" = @p14 AND "ConcurrencyStamp" = @p15;
+SELECT changes();
+2022-12-11 12:44:26.451 +01:00 [INF] Executed handler method OnGetAsync, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2022-12-11 12:44:26.560 +01:00 [INF] Executed page /Account/ConfirmEmail in 187.3643ms
+2022-12-11 12:44:26.560 +01:00 [INF] Executed endpoint '/Account/ConfirmEmail'
+2022-12-11 12:44:26.560 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:57680/Identity/Account/ConfirmEmail?userId=b4433b20-d081-436d-a07d-5a46f97e2b6d&code=Q2ZESjhMdGlIWHpkVVNaRm1UYm9neXhWdnljYlhPRlZFL3ZyMUh6ZFEyRytJV1phbUM3aGxSQ1ZZWjZBUDNqbDV5bFo5QWZQSncwMHozMkVqM3g4Vmxxdy9KN3lBekd4VEVPcjJCNGNraGozNUpiS1piK2x1aWpDaFFlVHM1eVN2MlA0ZUZ2dmdLaE9NNXdWeHIvaXVVeDdTS21VbkdoWHJnaEdDOXFMeHpGMHpxQW9FN2RrcUR0dlkrd1hISFVkZ2xZbXVOTEFWRFRETklYQVRlZDdtTUxBSnVSS0tyMEF5QTFrQTRQZXQ4WmFyakc0TDVNYXBXMEdQbk1FU0VkenhRY0phQT09&returnUrl=%2F - - - 200 - text/html;+charset=utf-8 220.8467ms
