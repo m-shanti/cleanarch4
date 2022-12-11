@@ -1,4 +1,4 @@
-﻿using Ardalis.ListStartupServices;
+using Ardalis.ListStartupServices;
 using Autofac;
 using Autofac.Extensions.DependencyInjection;
 using cleanarch4.Core;
@@ -8,6 +8,7 @@ using cleanarch4.Web;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using Serilog;
+using Microsoft.AspNetCore.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
 

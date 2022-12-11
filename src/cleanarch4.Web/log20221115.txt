@@ -1,0 +1,47 @@
+2022-11-15 21:24:06.805 +01:00 [INF] User profile is available. Using '/Users/maciejw/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-11-15 21:24:07.458 +01:00 [INF] Entity Framework Core 6.0.8 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.8' with options: None
+2022-11-15 21:24:07.969 +01:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2022-11-15 21:24:08.014 +01:00 [INF] Entity Framework Core 6.0.8 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.8' with options: None
+2022-11-15 21:24:08.126 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "ToDoItems" AS "t")
+2022-11-15 21:24:08.280 +01:00 [INF] Now listening on: http://localhost:57679
+2022-11-15 21:24:08.282 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-15 21:24:08.282 +01:00 [INF] Hosting environment: Development
+2022-11-15 21:24:08.282 +01:00 [INF] Content root path: /Users/maciejw/Projects/cleanarch4/src/cleanarch4.Web/
+2022-11-15 21:24:08.480 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/ - -
+2022-11-15 21:24:08.515 +01:00 [WRN] Failed to determine the https port for redirect.
+2022-11-15 21:24:08.558 +01:00 [INF] Executing endpoint 'cleanarch4.Web.Controllers.HomeController.Index (cleanarch4.Web)'
+2022-11-15 21:24:08.563 +01:00 [INF] Route matched with {action = "Index", controller = "Home", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller cleanarch4.Web.Controllers.HomeController (cleanarch4.Web).
+2022-11-15 21:24:08.568 +01:00 [INF] Executing ViewResult, running view Index.
+2022-11-15 21:24:08.769 +01:00 [INF] Executed ViewResult - view Index executed in 200.6527ms.
+2022-11-15 21:24:08.770 +01:00 [INF] Executed action cleanarch4.Web.Controllers.HomeController.Index (cleanarch4.Web) in 206.5097ms
+2022-11-15 21:24:08.770 +01:00 [INF] Executed endpoint 'cleanarch4.Web.Controllers.HomeController.Index (cleanarch4.Web)'
+2022-11-15 21:24:08.775 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/ - - - 200 - text/html;+charset=utf-8 298.0900ms
+2022-11-15 21:24:08.783 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/css/site.css?v=AKvNjO3dCPPS0eSU1Ez8T2wI280i08yGycV9ndytL-c - -
+2022-11-15 21:24:08.783 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/cleanarch4.Web.styles.css?v=G9jpTKqWZX1RL2PiuPAqAdWQaUBS3_Mp7b7V8IuYzIA - -
+2022-11-15 21:24:08.783 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/lib/jquery/dist/jquery.min.js - -
+2022-11-15 21:24:08.785 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - -
+2022-11-15 21:24:08.785 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/lib/bootstrap/dist/js/bootstrap.bundle.min.js - -
+2022-11-15 21:24:08.798 +01:00 [INF] Sending file. Request path: '/js/site.js'. Physical path: '/Users/maciejw/Projects/cleanarch4/src/cleanarch4.Web/wwwroot/js/site.js'
+2022-11-15 21:24:08.798 +01:00 [INF] Sending file. Request path: '/cleanarch4.Web.styles.css'. Physical path: '/Users/maciejw/Projects/cleanarch4/src/cleanarch4.Web/obj/Debug/net6.0/scopedcss/bundle/cleanarch4.Web.styles.css'
+2022-11-15 21:24:08.798 +01:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: '/Users/maciejw/Projects/cleanarch4/src/cleanarch4.Web/wwwroot/css/site.css'
+2022-11-15 21:24:08.801 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/css/site.css?v=AKvNjO3dCPPS0eSU1Ez8T2wI280i08yGycV9ndytL-c - - - 200 194 text/css 18.0108ms
+2022-11-15 21:24:08.801 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/cleanarch4.Web.styles.css?v=G9jpTKqWZX1RL2PiuPAqAdWQaUBS3_Mp7b7V8IuYzIA - - - 200 1082 text/css 18.0049ms
+2022-11-15 21:24:08.801 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - - - 200 230 application/javascript 16.1400ms
+2022-11-15 21:24:08.850 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/lib/bootstrap/dist/css/bootstrap.min.css - -
+2022-11-15 21:24:08.858 +01:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: '/Users/maciejw/Projects/cleanarch4/src/cleanarch4.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js'
+2022-11-15 21:24:08.859 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/lib/bootstrap/dist/js/bootstrap.bundle.min.js - - - 200 78474 application/javascript 73.9665ms
+2022-11-15 21:24:08.870 +01:00 [INF] Sending file. Request path: '/lib/jquery/dist/jquery.min.js'. Physical path: '/Users/maciejw/Projects/cleanarch4/src/cleanarch4.Web/wwwroot/lib/jquery/dist/jquery.min.js'
+2022-11-15 21:24:08.870 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/lib/jquery/dist/jquery.min.js - - - 200 89478 application/javascript 87.1193ms
+2022-11-15 21:24:08.961 +01:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: '/Users/maciejw/Projects/cleanarch4/src/cleanarch4.Web/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css'
+2022-11-15 21:24:08.961 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/lib/bootstrap/dist/css/bootstrap.min.css - - - 200 162726 text/css 110.9235ms
+2022-11-15 21:24:09.047 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/favicon.ico - -
+2022-11-15 21:24:09.057 +01:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: '/Users/maciejw/Projects/cleanarch4/src/cleanarch4.Web/wwwroot/favicon.ico'
+2022-11-15 21:24:09.057 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/favicon.ico - - - 200 5430 image/x-icon 10.7420ms
+2022-11-15 21:24:37.009 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/healthz - -
+2022-11-15 21:24:37.014 +01:00 [INF] Executing endpoint 'Health checks'
+2022-11-15 21:24:37.031 +01:00 [INF] Executed endpoint 'Health checks'
+2022-11-15 21:24:37.032 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/healthz - - - 200 - text/plain 24.1352ms

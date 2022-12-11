@@ -1,0 +1,545 @@
+2022-12-11 00:00:21.488 +01:00 [INF] Application is shutting down...
+2022-12-11 00:00:24.421 +01:00 [INF] User profile is available. Using '/Users/maciejw/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-12-11 00:00:25.085 +01:00 [INF] Entity Framework Core 6.0.8 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.8' with options: None
+2022-12-11 00:00:25.129 +01:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2022-12-11 00:00:25.135 +01:00 [INF] Entity Framework Core 6.0.8 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.8' with options: None
+2022-12-11 00:00:25.237 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "ToDoItems" AS "t")
+2022-12-11 00:00:25.363 +01:00 [INF] Now listening on: https://localhost:57680
+2022-12-11 00:00:25.364 +01:00 [INF] Now listening on: http://localhost:57679
+2022-12-11 00:00:25.365 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-11 00:00:25.365 +01:00 [INF] Hosting environment: Development
+2022-12-11 00:00:25.365 +01:00 [INF] Content root path: /Users/maciejw/Projects/cleanarch4/src/cleanarch4.Web/
+2022-12-11 00:00:25.924 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:57680/ - -
+2022-12-11 00:00:26.008 +01:00 [INF] Executing endpoint 'cleanarch4.Web.Controllers.HomeController.Index (cleanarch4.Web)'
+2022-12-11 00:00:26.012 +01:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller cleanarch4.Web.Controllers.HomeController (cleanarch4.Web).
+2022-12-11 00:00:26.017 +01:00 [INF] Executing ViewResult, running view Index.
+2022-12-11 00:00:26.162 +01:00 [INF] Executed ViewResult - view Index executed in 144.2018ms.
+2022-12-11 00:00:26.162 +01:00 [INF] Executed action cleanarch4.Web.Controllers.HomeController.Index (cleanarch4.Web) in 150.1457ms
+2022-12-11 00:00:26.162 +01:00 [INF] Executed endpoint 'cleanarch4.Web.Controllers.HomeController.Index (cleanarch4.Web)'
+2022-12-11 00:00:26.169 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:57680/ - - - 200 - text/html;+charset=utf-8 247.1442ms
+2022-12-11 00:00:28.639 +01:00 [INF] Request starting HTTP/1.1 POST https://localhost:57680/Identity/Account/Logout?returnUrl=%2F%3Fpage%3D%252F application/x-www-form-urlencoded 225
+2022-12-11 00:00:28.647 +01:00 [INF] Executing endpoint '/Account/Logout'
+2022-12-11 00:00:28.677 +01:00 [INF] Route matched with {page = "/Account/Logout", area = "Identity", action = "", controller = ""}. Executing page /Account/Logout
+2022-12-11 00:00:28.710 +01:00 [INF] Executing handler method Microsoft.AspNetCore.Identity.UI.V5.Pages.Account.Internal.LogoutModel.OnPost - ModelState is "Valid"
+2022-12-11 00:00:28.716 +01:00 [INF] AuthenticationScheme: Identity.Application signed out.
+2022-12-11 00:00:28.716 +01:00 [INF] AuthenticationScheme: Identity.External signed out.
+2022-12-11 00:00:28.717 +01:00 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2022-12-11 00:00:28.718 +01:00 [INF] User logged out.
+2022-12-11 00:00:28.718 +01:00 [INF] Executed handler method OnPost, returned result Microsoft.AspNetCore.Mvc.LocalRedirectResult.
+2022-12-11 00:00:28.719 +01:00 [INF] Executing LocalRedirectResult, redirecting to /?page=%2F.
+2022-12-11 00:00:28.719 +01:00 [INF] Executed page /Account/Logout in 42.0778ms
+2022-12-11 00:00:28.719 +01:00 [INF] Executed endpoint '/Account/Logout'
+2022-12-11 00:00:28.719 +01:00 [INF] Request finished HTTP/1.1 POST https://localhost:57680/Identity/Account/Logout?returnUrl=%2F%3Fpage%3D%252F application/x-www-form-urlencoded 225 - 302 0 - 80.6740ms
+2022-12-11 00:00:28.722 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:57680/?page=%2F - -
+2022-12-11 00:00:28.730 +01:00 [INF] Executing endpoint 'cleanarch4.Web.Controllers.HomeController.Index (cleanarch4.Web)'
+2022-12-11 00:00:28.733 +01:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller cleanarch4.Web.Controllers.HomeController (cleanarch4.Web).
+2022-12-11 00:00:28.733 +01:00 [INF] Executing ViewResult, running view Index.
+2022-12-11 00:00:28.740 +01:00 [INF] Executed ViewResult - view Index executed in 6.8562ms.
+2022-12-11 00:00:28.740 +01:00 [INF] Executed action cleanarch4.Web.Controllers.HomeController.Index (cleanarch4.Web) in 7.1776ms
+2022-12-11 00:00:28.741 +01:00 [INF] Executed endpoint 'cleanarch4.Web.Controllers.HomeController.Index (cleanarch4.Web)'
+2022-12-11 00:00:28.741 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:57680/?page=%2F - - - 200 - text/html;+charset=utf-8 18.3848ms
+2022-12-11 00:00:32.208 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:57680/Identity/Account/Login - -
+2022-12-11 00:00:32.219 +01:00 [INF] Executing endpoint '/Account/Login'
+2022-12-11 00:00:32.232 +01:00 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+2022-12-11 00:00:32.236 +01:00 [INF] Executing handler method Microsoft.AspNetCore.Identity.UI.V5.Pages.Account.Internal.LoginModel.OnGetAsync - ModelState is "Valid"
+2022-12-11 00:00:32.239 +01:00 [INF] AuthenticationScheme: Identity.External signed out.
+2022-12-11 00:00:32.243 +01:00 [INF] Executed handler method OnGetAsync, returned result .
+2022-12-11 00:00:32.253 +01:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2022-12-11 00:00:32.253 +01:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2022-12-11 00:00:32.309 +01:00 [INF] Executed page /Account/Login in 76.3697ms
+2022-12-11 00:00:32.309 +01:00 [INF] Executed endpoint '/Account/Login'
+2022-12-11 00:00:32.309 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:57680/Identity/Account/Login - - - 200 - text/html;+charset=utf-8 101.4870ms
+2022-12-11 00:00:32.320 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:57680/Identity/lib/jquery-validation/dist/jquery.validate.js - -
+2022-12-11 00:00:32.334 +01:00 [INF] Sending file. Request path: '/Identity/lib/jquery-validation/dist/jquery.validate.js'. Physical path: '/Users/maciejw/.nuget/packages/microsoft.aspnetcore.identity.ui/6.0.8/staticwebassets/V5/lib/jquery-validation/dist/jquery.validate.js'
+2022-12-11 00:00:32.336 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:57680/Identity/lib/jquery-validation/dist/jquery.validate.js - - - 200 48676 application/javascript 16.8815ms
+2022-12-11 00:00:32.337 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:57680/Identity/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js - -
+2022-12-11 00:00:32.341 +01:00 [INF] Sending file. Request path: '/Identity/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js'. Physical path: '/Users/maciejw/.nuget/packages/microsoft.aspnetcore.identity.ui/6.0.8/staticwebassets/V5/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js'
+2022-12-11 00:00:32.342 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:57680/Identity/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js - - - 200 19366 application/javascript 4.6550ms
+2022-12-11 00:02:59.169 +01:00 [INF] Application is shutting down...
+2022-12-11 11:25:09.327 +01:00 [INF] User profile is available. Using '/Users/maciejw/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-12-11 11:25:10.664 +01:00 [INF] Entity Framework Core 6.0.8 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.8' with options: None
+2022-12-11 11:25:10.878 +01:00 [INF] Executed DbCommand (30ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2022-12-11 11:25:10.920 +01:00 [INF] Entity Framework Core 6.0.8 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.8' with options: None
+2022-12-11 11:25:11.041 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "ToDoItems" AS "t")
+2022-12-11 11:25:11.441 +01:00 [INF] Now listening on: https://localhost:57680
+2022-12-11 11:25:11.441 +01:00 [INF] Now listening on: http://localhost:57679
+2022-12-11 11:25:11.442 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-11 11:25:11.442 +01:00 [INF] Hosting environment: Development
+2022-12-11 11:25:11.442 +01:00 [INF] Content root path: /Users/maciejw/Projects/cleanarch4/src/cleanarch4.Web/
+2022-12-11 11:25:15.963 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:57680/ - -
+2022-12-11 11:25:16.076 +01:00 [INF] Executing endpoint 'cleanarch4.Web.Controllers.HomeController.Index (cleanarch4.Web)'
+2022-12-11 11:25:16.081 +01:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller cleanarch4.Web.Controllers.HomeController (cleanarch4.Web).
+2022-12-11 11:25:16.087 +01:00 [INF] Executing ViewResult, running view Index.
+2022-12-11 11:25:16.343 +01:00 [INF] Executed ViewResult - view Index executed in 255.2932ms.
+2022-12-11 11:25:16.343 +01:00 [INF] Executed action cleanarch4.Web.Controllers.HomeController.Index (cleanarch4.Web) in 261.8844ms
+2022-12-11 11:25:16.343 +01:00 [INF] Executed endpoint 'cleanarch4.Web.Controllers.HomeController.Index (cleanarch4.Web)'
+2022-12-11 11:25:16.349 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:57680/ - - - 200 - text/html;+charset=utf-8 388.0565ms
+2022-12-11 11:25:16.411 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:57680/lib/bootstrap/dist/css/bootstrap.min.css - -
+2022-12-11 11:25:16.482 +01:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: '/Users/maciejw/Projects/cleanarch4/src/cleanarch4.Web/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css'
+2022-12-11 11:25:16.484 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:57680/lib/bootstrap/dist/css/bootstrap.min.css - - - 200 162726 text/css 73.9697ms
+2022-12-11 11:25:16.485 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:57680/cleanarch4.Web.styles.css?v=G9jpTKqWZX1RL2PiuPAqAdWQaUBS3_Mp7b7V8IuYzIA - -
+2022-12-11 11:25:16.486 +01:00 [INF] Sending file. Request path: '/cleanarch4.Web.styles.css'. Physical path: '/Users/maciejw/Projects/cleanarch4/src/cleanarch4.Web/obj/Debug/net6.0/scopedcss/bundle/cleanarch4.Web.styles.css'
+2022-12-11 11:25:16.486 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:57680/cleanarch4.Web.styles.css?v=G9jpTKqWZX1RL2PiuPAqAdWQaUBS3_Mp7b7V8IuYzIA - - - 200 1082 text/css 1.3943ms
+2022-12-11 11:25:16.489 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:57680/css/site.css?v=AKvNjO3dCPPS0eSU1Ez8T2wI280i08yGycV9ndytL-c - -
+2022-12-11 11:25:16.490 +01:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: '/Users/maciejw/Projects/cleanarch4/src/cleanarch4.Web/wwwroot/css/site.css'
+2022-12-11 11:25:16.490 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:57680/css/site.css?v=AKvNjO3dCPPS0eSU1Ez8T2wI280i08yGycV9ndytL-c - - - 200 194 text/css 0.6902ms
+2022-12-11 11:25:16.492 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:57680/lib/jquery/dist/jquery.min.js - -
+2022-12-11 11:25:16.536 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:57680/lib/bootstrap/dist/js/bootstrap.bundle.min.js - -
+2022-12-11 11:25:16.537 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:57680/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - -
+2022-12-11 11:25:16.537 +01:00 [INF] Sending file. Request path: '/js/site.js'. Physical path: '/Users/maciejw/Projects/cleanarch4/src/cleanarch4.Web/wwwroot/js/site.js'
+2022-12-11 11:25:16.537 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:57680/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - - - 200 230 application/javascript 0.4630ms
+2022-12-11 11:25:16.540 +01:00 [INF] Sending file. Request path: '/lib/jquery/dist/jquery.min.js'. Physical path: '/Users/maciejw/Projects/cleanarch4/src/cleanarch4.Web/wwwroot/lib/jquery/dist/jquery.min.js'
+2022-12-11 11:25:16.540 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:57680/lib/jquery/dist/jquery.min.js - - - 200 89478 application/javascript 48.0292ms
+2022-12-11 11:25:16.565 +01:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: '/Users/maciejw/Projects/cleanarch4/src/cleanarch4.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js'
+2022-12-11 11:25:16.565 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:57680/lib/bootstrap/dist/js/bootstrap.bundle.min.js - - - 200 78474 application/javascript 28.9658ms
+2022-12-11 11:25:16.602 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:57680/favicon.ico - -
+2022-12-11 11:25:16.610 +01:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: '/Users/maciejw/Projects/cleanarch4/src/cleanarch4.Web/wwwroot/favicon.ico'
+2022-12-11 11:25:16.610 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:57680/favicon.ico - - - 200 5430 image/x-icon 8.4107ms
+2022-12-11 11:25:20.022 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:57680/Identity/Account/Login - -
+2022-12-11 11:25:20.023 +01:00 [INF] Executing endpoint '/Account/Login'
+2022-12-11 11:25:20.052 +01:00 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+2022-12-11 11:25:20.078 +01:00 [INF] Executing handler method Microsoft.AspNetCore.Identity.UI.V5.Pages.Account.Internal.LoginModel.OnGetAsync - ModelState is "Valid"
+2022-12-11 11:25:20.087 +01:00 [INF] AuthenticationScheme: Identity.External signed out.
+2022-12-11 11:25:20.088 +01:00 [INF] Executed handler method OnGetAsync, returned result .
+2022-12-11 11:25:20.094 +01:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2022-12-11 11:25:20.094 +01:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2022-12-11 11:25:20.140 +01:00 [INF] Executed page /Account/Login in 87.721ms
+2022-12-11 11:25:20.140 +01:00 [INF] Executed endpoint '/Account/Login'
+2022-12-11 11:25:20.140 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:57680/Identity/Account/Login - - - 200 - text/html;+charset=utf-8 118.6896ms
+2022-12-11 11:25:20.162 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:57680/Identity/lib/jquery-validation/dist/jquery.validate.js - -
+2022-12-11 11:25:20.166 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:57680/Identity/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js - -
+2022-12-11 11:25:20.219 +01:00 [INF] Sending file. Request path: '/Identity/lib/jquery-validation/dist/jquery.validate.js'. Physical path: '/Users/maciejw/.nuget/packages/microsoft.aspnetcore.identity.ui/6.0.8/staticwebassets/V5/lib/jquery-validation/dist/jquery.validate.js'
+2022-12-11 11:25:20.219 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:57680/Identity/lib/jquery-validation/dist/jquery.validate.js - - - 200 48676 application/javascript 57.1322ms
+2022-12-11 11:25:20.226 +01:00 [INF] Sending file. Request path: '/Identity/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js'. Physical path: '/Users/maciejw/.nuget/packages/microsoft.aspnetcore.identity.ui/6.0.8/staticwebassets/V5/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js'
+2022-12-11 11:25:20.226 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:57680/Identity/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js - - - 200 19366 application/javascript 59.7862ms
+2022-12-11 11:25:22.186 +01:00 [INF] Request starting HTTP/1.1 POST https://localhost:57680/Identity/Account/ExternalLogin?returnUrl=%2F application/x-www-form-urlencoded 198
+2022-12-11 11:25:22.195 +01:00 [INF] Executing endpoint '/Account/ExternalLogin'
+2022-12-11 11:25:22.209 +01:00 [INF] Route matched with {page = "/Account/ExternalLogin", area = "Identity", action = "", controller = ""}. Executing page /Account/ExternalLogin
+2022-12-11 11:25:22.229 +01:00 [INF] Executing handler method Microsoft.AspNetCore.Identity.UI.V5.Pages.Account.Internal.ExternalLoginModel.OnPost - ModelState is "Invalid"
+2022-12-11 11:25:22.230 +01:00 [INF] Executed handler method OnPost, returned result Microsoft.AspNetCore.Mvc.ChallengeResult.
+2022-12-11 11:25:22.233 +01:00 [INF] Executing ChallengeResult with authentication schemes (["Google"]).
+2022-12-11 11:25:22.237 +01:00 [INF] AuthenticationScheme: Google was challenged.
+2022-12-11 11:25:22.237 +01:00 [INF] Executed page /Account/ExternalLogin in 28.4813ms
+2022-12-11 11:25:22.238 +01:00 [INF] Executed endpoint '/Account/ExternalLogin'
+2022-12-11 11:25:22.238 +01:00 [INF] Request finished HTTP/1.1 POST https://localhost:57680/Identity/Account/ExternalLogin?returnUrl=%2F application/x-www-form-urlencoded 198 - 302 0 - 51.3770ms
+2022-12-11 11:25:22.677 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:57680/signin-google?state=CfDJ8LtiHXzdUSZFmTbogyxVvyfeSWcF1dMgTcnOZqCq5h9KgNQCuMDKa1CbvT5dqMwtbs0AGqlRx9aseoBm0wPolB1-KtR3JRjwlrJFczeaArW81cXzDnb9HbPVeuBktoM-u3j6Ddc3JV4iHV8ic9RQ-NTwn88ABe4r364yl-3fiLvYtYkOlS_iABNEpIxirWmvRIqfpVKpDuI6ghsfk6GxUuCtPn9WjXpDYD6l90kFjJuJdiAx-5EFbADWdmJ87n-t3hov0YVyuZRU591XSzYiqDEerFLnGeXuFwWOkDfz5qdfr-lv0t11UzP-BhaJ6sl4TA&code=4%2F0AfgeXvs7IQKo3WQCwk6nPsMiplo1ApJWvzRpYbTTiGdv4wgcaynnLUgytt6s1G50QnKjqA&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=0&hd=djc.pl&prompt=none - -
+2022-12-11 11:25:23.444 +01:00 [INF] AuthenticationScheme: Identity.External signed in.
+2022-12-11 11:25:23.444 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:57680/signin-google?state=CfDJ8LtiHXzdUSZFmTbogyxVvyfeSWcF1dMgTcnOZqCq5h9KgNQCuMDKa1CbvT5dqMwtbs0AGqlRx9aseoBm0wPolB1-KtR3JRjwlrJFczeaArW81cXzDnb9HbPVeuBktoM-u3j6Ddc3JV4iHV8ic9RQ-NTwn88ABe4r364yl-3fiLvYtYkOlS_iABNEpIxirWmvRIqfpVKpDuI6ghsfk6GxUuCtPn9WjXpDYD6l90kFjJuJdiAx-5EFbADWdmJ87n-t3hov0YVyuZRU591XSzYiqDEerFLnGeXuFwWOkDfz5qdfr-lv0t11UzP-BhaJ6sl4TA&code=4%2F0AfgeXvs7IQKo3WQCwk6nPsMiplo1ApJWvzRpYbTTiGdv4wgcaynnLUgytt6s1G50QnKjqA&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=0&hd=djc.pl&prompt=none - - - 302 0 - 767.6933ms
+2022-12-11 11:25:23.448 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:57680/Identity/Account/ExternalLogin?returnUrl=%2F&handler=Callback - -
+2022-12-11 11:25:23.448 +01:00 [INF] Executing endpoint '/Account/ExternalLogin'
+2022-12-11 11:25:23.448 +01:00 [INF] Route matched with {page = "/Account/ExternalLogin", area = "Identity", action = "", controller = ""}. Executing page /Account/ExternalLogin
+2022-12-11 11:25:23.449 +01:00 [INF] Executing handler method Microsoft.AspNetCore.Identity.UI.V5.Pages.Account.Internal.ExternalLoginModel.OnGetCallbackAsync - ModelState is "Valid"
+2022-12-11 11:25:23.498 +01:00 [INF] Entity Framework Core 6.0.8 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.8' with options: None
+2022-12-11 11:25:23.585 +01:00 [INF] Executed DbCommand (5ms) [Parameters=[@__loginProvider_0='?' (Size = 6), @__providerKey_1='?' (Size = 21)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."LoginProvider", "a"."ProviderKey", "a"."ProviderDisplayName", "a"."UserId"
+FROM "AspNetUserLogins" AS "a"
+WHERE ("a"."LoginProvider" = @__loginProvider_0) AND ("a"."ProviderKey" = @__providerKey_1)
+LIMIT 2
+2022-12-11 11:25:23.646 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__userId_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."Id" = @__userId_0
+LIMIT 2
+2022-12-11 11:25:23.680 +01:00 [INF] AuthenticationScheme: Identity.External signed out.
+2022-12-11 11:25:23.695 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__user_Id_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ClaimType", "a"."ClaimValue", "a"."UserId"
+FROM "AspNetUserClaims" AS "a"
+WHERE "a"."UserId" = @__user_Id_0
+2022-12-11 11:25:23.696 +01:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2022-12-11 11:25:23.696 +01:00 [INF] User logged in with Google provider.
+2022-12-11 11:25:23.697 +01:00 [INF] Executed handler method OnGetCallbackAsync, returned result Microsoft.AspNetCore.Mvc.LocalRedirectResult.
+2022-12-11 11:25:23.697 +01:00 [INF] Executing LocalRedirectResult, redirecting to /.
+2022-12-11 11:25:23.697 +01:00 [INF] Executed page /Account/ExternalLogin in 248.8449ms
+2022-12-11 11:25:23.697 +01:00 [INF] Executed endpoint '/Account/ExternalLogin'
+2022-12-11 11:25:23.698 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:57680/Identity/Account/ExternalLogin?returnUrl=%2F&handler=Callback - - - 302 0 - 250.4637ms
+2022-12-11 11:25:23.700 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:57680/ - -
+2022-12-11 11:25:23.703 +01:00 [INF] Executing endpoint 'cleanarch4.Web.Controllers.HomeController.Index (cleanarch4.Web)'
+2022-12-11 11:25:23.703 +01:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller cleanarch4.Web.Controllers.HomeController (cleanarch4.Web).
+2022-12-11 11:25:23.703 +01:00 [INF] Executing ViewResult, running view Index.
+2022-12-11 11:25:23.706 +01:00 [INF] Executed ViewResult - view Index executed in 2.6776ms.
+2022-12-11 11:25:23.706 +01:00 [INF] Executed action cleanarch4.Web.Controllers.HomeController.Index (cleanarch4.Web) in 2.9762ms
+2022-12-11 11:25:23.706 +01:00 [INF] Executed endpoint 'cleanarch4.Web.Controllers.HomeController.Index (cleanarch4.Web)'
+2022-12-11 11:25:23.706 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:57680/ - - - 200 - text/html;+charset=utf-8 6.4057ms
+2022-12-11 11:25:27.257 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:57680/Identity/Account/Manage - -
+2022-12-11 11:25:27.264 +01:00 [INF] Executing endpoint '/Account/Manage/Index'
+2022-12-11 11:25:27.270 +01:00 [INF] Route matched with {page = "/Account/Manage/Index", area = "Identity", action = "", controller = ""}. Executing page /Account/Manage/Index
+2022-12-11 11:25:27.273 +01:00 [INF] Executing handler method Microsoft.AspNetCore.Identity.UI.V4.Pages.Account.Manage.Internal.IndexModel.OnGetAsync - ModelState is "Valid"
+2022-12-11 11:25:27.279 +01:00 [INF] Entity Framework Core 6.0.8 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.8' with options: None
+2022-12-11 11:25:27.306 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."Id" = @__p_0
+LIMIT 1
+2022-12-11 11:25:27.311 +01:00 [INF] Executed handler method OnGetAsync, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2022-12-11 11:25:27.346 +01:00 [INF] Executed page /Account/Manage/Index in 75.4735ms
+2022-12-11 11:25:27.346 +01:00 [INF] Executed endpoint '/Account/Manage/Index'
+2022-12-11 11:25:27.346 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:57680/Identity/Account/Manage - - - 200 - text/html;+charset=utf-8 89.1693ms
+2022-12-11 11:25:27.359 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:57680/Identity/lib/jquery-validation/dist/jquery.validate.js - -
+2022-12-11 11:25:27.360 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:57680/Identity/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js - -
+2022-12-11 11:25:27.362 +01:00 [INF] Sending file. Request path: '/Identity/lib/jquery-validation/dist/jquery.validate.js'. Physical path: '/Users/maciejw/.nuget/packages/microsoft.aspnetcore.identity.ui/6.0.8/staticwebassets/V5/lib/jquery-validation/dist/jquery.validate.js'
+2022-12-11 11:25:27.363 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:57680/Identity/lib/jquery-validation/dist/jquery.validate.js - - - 200 48676 application/javascript 3.4815ms
+2022-12-11 11:25:27.363 +01:00 [INF] Sending file. Request path: '/Identity/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js'. Physical path: '/Users/maciejw/.nuget/packages/microsoft.aspnetcore.identity.ui/6.0.8/staticwebassets/V5/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js'
+2022-12-11 11:25:27.363 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:57680/Identity/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js - - - 200 19366 application/javascript 2.6691ms
+2022-12-11 11:25:31.969 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:57680/Identity/Account/Manage/Email - -
+2022-12-11 11:25:31.971 +01:00 [INF] Executing endpoint '/Account/Manage/Email'
+2022-12-11 11:25:31.976 +01:00 [INF] Route matched with {page = "/Account/Manage/Email", area = "Identity", action = "", controller = ""}. Executing page /Account/Manage/Email
+2022-12-11 11:25:31.977 +01:00 [INF] Executing handler method Microsoft.AspNetCore.Identity.UI.V4.Pages.Account.Manage.Internal.EmailModel.OnGetAsync - ModelState is "Valid"
+2022-12-11 11:25:31.981 +01:00 [INF] Entity Framework Core 6.0.8 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.8' with options: None
+2022-12-11 11:25:31.988 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."Id" = @__p_0
+LIMIT 1
+2022-12-11 11:25:31.992 +01:00 [INF] Executed handler method OnGetAsync, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2022-12-11 11:25:32.026 +01:00 [INF] Executed page /Account/Manage/Email in 49.5113ms
+2022-12-11 11:25:32.027 +01:00 [INF] Executed endpoint '/Account/Manage/Email'
+2022-12-11 11:25:32.027 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:57680/Identity/Account/Manage/Email - - - 200 - text/html;+charset=utf-8 58.0765ms
+2022-12-11 11:25:37.736 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:57680/Identity/Account/Manage/ChangePassword - -
+2022-12-11 11:25:37.742 +01:00 [INF] Executing endpoint '/Account/Manage/ChangePassword'
+2022-12-11 11:25:37.748 +01:00 [INF] Route matched with {page = "/Account/Manage/ChangePassword", area = "Identity", action = "", controller = ""}. Executing page /Account/Manage/ChangePassword
+2022-12-11 11:25:37.750 +01:00 [INF] Executing handler method Microsoft.AspNetCore.Identity.UI.V4.Pages.Account.Manage.Internal.ChangePasswordModel.OnGetAsync - ModelState is "Valid"
+2022-12-11 11:25:37.754 +01:00 [INF] Entity Framework Core 6.0.8 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.8' with options: None
+2022-12-11 11:25:37.756 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."Id" = @__p_0
+LIMIT 1
+2022-12-11 11:25:37.757 +01:00 [INF] Executed handler method OnGetAsync, returned result Microsoft.AspNetCore.Mvc.RedirectToPageResult.
+2022-12-11 11:25:37.758 +01:00 [INF] Executing RedirectToPageResult, redirecting to ./SetPassword.
+2022-12-11 11:25:37.758 +01:00 [INF] Executed page /Account/Manage/ChangePassword in 9.9659ms
+2022-12-11 11:25:37.759 +01:00 [INF] Executed endpoint '/Account/Manage/ChangePassword'
+2022-12-11 11:25:37.759 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:57680/Identity/Account/Manage/ChangePassword - - - 302 0 - 23.1525ms
+2022-12-11 11:25:37.761 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:57680/Identity/Account/Manage/SetPassword - -
+2022-12-11 11:25:37.762 +01:00 [INF] Executing endpoint '/Account/Manage/SetPassword'
+2022-12-11 11:25:37.767 +01:00 [INF] Route matched with {page = "/Account/Manage/SetPassword", area = "Identity", action = "", controller = ""}. Executing page /Account/Manage/SetPassword
+2022-12-11 11:25:37.767 +01:00 [INF] Executing handler method Microsoft.AspNetCore.Identity.UI.V4.Pages.Account.Manage.Internal.SetPasswordModel.OnGetAsync - ModelState is "Valid"
+2022-12-11 11:25:37.771 +01:00 [INF] Entity Framework Core 6.0.8 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.8' with options: None
+2022-12-11 11:25:37.772 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."Id" = @__p_0
+LIMIT 1
+2022-12-11 11:25:37.773 +01:00 [INF] Executed handler method OnGetAsync, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2022-12-11 11:25:37.796 +01:00 [INF] Executed page /Account/Manage/SetPassword in 28.9828ms
+2022-12-11 11:25:37.796 +01:00 [INF] Executed endpoint '/Account/Manage/SetPassword'
+2022-12-11 11:25:37.796 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:57680/Identity/Account/Manage/SetPassword - - - 200 - text/html;+charset=utf-8 35.0316ms
+2022-12-11 11:25:46.020 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:57680/Identity/Account/Manage/ExternalLogins - -
+2022-12-11 11:25:46.034 +01:00 [INF] Executing endpoint '/Account/Manage/ExternalLogins'
+2022-12-11 11:25:46.036 +01:00 [INF] Route matched with {page = "/Account/Manage/ExternalLogins", area = "Identity", action = "", controller = ""}. Executing page /Account/Manage/ExternalLogins
+2022-12-11 11:25:46.037 +01:00 [INF] Executing handler method Microsoft.AspNetCore.Identity.UI.V4.Pages.Account.Manage.Internal.ExternalLoginsModel.OnGetAsync - ModelState is "Valid"
+2022-12-11 11:25:46.039 +01:00 [INF] Entity Framework Core 6.0.8 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.8' with options: None
+2022-12-11 11:25:46.040 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."Id" = @__p_0
+LIMIT 1
+2022-12-11 11:25:46.049 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__userId_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."LoginProvider", "a"."ProviderKey", "a"."ProviderDisplayName"
+FROM "AspNetUserLogins" AS "a"
+WHERE "a"."UserId" = @__userId_0
+2022-12-11 11:25:46.053 +01:00 [INF] Executed handler method OnGetAsync, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2022-12-11 11:25:46.061 +01:00 [INF] Executed page /Account/Manage/ExternalLogins in 24.2391ms
+2022-12-11 11:25:46.061 +01:00 [INF] Executed endpoint '/Account/Manage/ExternalLogins'
+2022-12-11 11:25:46.061 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:57680/Identity/Account/Manage/ExternalLogins - - - 200 - text/html;+charset=utf-8 41.3853ms
+2022-12-11 11:25:49.754 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:57680/Identity/Account/Manage/TwoFactorAuthentication - -
+2022-12-11 11:25:49.757 +01:00 [INF] Executing endpoint '/Account/Manage/TwoFactorAuthentication'
+2022-12-11 11:25:49.762 +01:00 [INF] Route matched with {page = "/Account/Manage/TwoFactorAuthentication", area = "Identity", action = "", controller = ""}. Executing page /Account/Manage/TwoFactorAuthentication
+2022-12-11 11:25:49.764 +01:00 [INF] Executing handler method Microsoft.AspNetCore.Identity.UI.V4.Pages.Account.Manage.Internal.TwoFactorAuthenticationModel.OnGetAsync - ModelState is "Valid"
+2022-12-11 11:25:49.768 +01:00 [INF] Entity Framework Core 6.0.8 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.8' with options: None
+2022-12-11 11:25:49.770 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."Id" = @__p_0
+LIMIT 1
+2022-12-11 11:25:49.779 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (Size = 36), @__p_1='?' (Size = 17), @__p_2='?' (Size = 16)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."UserId", "a"."LoginProvider", "a"."Name", "a"."Value"
+FROM "AspNetUserTokens" AS "a"
+WHERE (("a"."UserId" = @__p_0) AND ("a"."LoginProvider" = @__p_1)) AND ("a"."Name" = @__p_2)
+LIMIT 1
+2022-12-11 11:25:49.782 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (Size = 36), @__p_1='?' (Size = 17), @__p_2='?' (Size = 13)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."UserId", "a"."LoginProvider", "a"."Name", "a"."Value"
+FROM "AspNetUserTokens" AS "a"
+WHERE (("a"."UserId" = @__p_0) AND ("a"."LoginProvider" = @__p_1)) AND ("a"."Name" = @__p_2)
+LIMIT 1
+2022-12-11 11:25:49.783 +01:00 [INF] Executed handler method OnGetAsync, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2022-12-11 11:25:49.794 +01:00 [INF] Executed page /Account/Manage/TwoFactorAuthentication in 31.3241ms
+2022-12-11 11:25:49.794 +01:00 [INF] Executed endpoint '/Account/Manage/TwoFactorAuthentication'
+2022-12-11 11:25:49.794 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:57680/Identity/Account/Manage/TwoFactorAuthentication - - - 200 - text/html;+charset=utf-8 40.2193ms
+2022-12-11 11:26:02.122 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:57680/Identity/Account/Manage/PersonalData - -
+2022-12-11 11:26:02.124 +01:00 [INF] Executing endpoint '/Account/Manage/PersonalData'
+2022-12-11 11:26:02.138 +01:00 [INF] Route matched with {page = "/Account/Manage/PersonalData", area = "Identity", action = "", controller = ""}. Executing page /Account/Manage/PersonalData
+2022-12-11 11:26:02.140 +01:00 [INF] Executing handler method Microsoft.AspNetCore.Identity.UI.V4.Pages.Account.Manage.Internal.PersonalDataModel.OnGet - ModelState is "Valid"
+2022-12-11 11:26:02.144 +01:00 [INF] Entity Framework Core 6.0.8 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.8' with options: None
+2022-12-11 11:26:02.147 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."Id" = @__p_0
+LIMIT 1
+2022-12-11 11:26:02.147 +01:00 [INF] Executed handler method OnGet, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2022-12-11 11:26:02.164 +01:00 [INF] Executed page /Account/Manage/PersonalData in 25.5712ms
+2022-12-11 11:26:02.164 +01:00 [INF] Executed endpoint '/Account/Manage/PersonalData'
+2022-12-11 11:26:02.165 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:57680/Identity/Account/Manage/PersonalData - - - 200 - text/html;+charset=utf-8 42.1799ms
+2022-12-11 11:26:13.044 +01:00 [INF] Request starting HTTP/1.1 POST https://localhost:57680/Identity/Account/Manage/DownloadPersonalData application/x-www-form-urlencoded 225
+2022-12-11 11:26:13.048 +01:00 [INF] Executing endpoint '/Account/Manage/DownloadPersonalData'
+2022-12-11 11:26:13.052 +01:00 [INF] Route matched with {page = "/Account/Manage/DownloadPersonalData", area = "Identity", action = "", controller = ""}. Executing page /Account/Manage/DownloadPersonalData
+2022-12-11 11:26:13.056 +01:00 [INF] Executing handler method Microsoft.AspNetCore.Identity.UI.V4.Pages.Account.Manage.Internal.DownloadPersonalDataModel.OnPostAsync - ModelState is "Valid"
+2022-12-11 11:26:13.066 +01:00 [INF] Entity Framework Core 6.0.8 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.8' with options: None
+2022-12-11 11:26:13.068 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."Id" = @__p_0
+LIMIT 1
+2022-12-11 11:26:13.068 +01:00 [INF] User asked for their personal data.
+2022-12-11 11:26:13.071 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__userId_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."LoginProvider", "a"."ProviderKey", "a"."ProviderDisplayName"
+FROM "AspNetUserLogins" AS "a"
+WHERE "a"."UserId" = @__userId_0
+2022-12-11 11:26:13.074 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (Size = 36), @__p_1='?' (Size = 17), @__p_2='?' (Size = 16)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."UserId", "a"."LoginProvider", "a"."Name", "a"."Value"
+FROM "AspNetUserTokens" AS "a"
+WHERE (("a"."UserId" = @__p_0) AND ("a"."LoginProvider" = @__p_1)) AND ("a"."Name" = @__p_2)
+LIMIT 1
+2022-12-11 11:26:13.076 +01:00 [INF] Executed handler method OnPostAsync, returned result Microsoft.AspNetCore.Mvc.FileContentResult.
+2022-12-11 11:26:13.079 +01:00 [INF] Executing FileContentResult, sending file with download name '' ...
+2022-12-11 11:26:13.082 +01:00 [INF] Executed page /Account/Manage/DownloadPersonalData in 29.3353ms
+2022-12-11 11:26:13.082 +01:00 [INF] Executed endpoint '/Account/Manage/DownloadPersonalData'
+2022-12-11 11:26:13.082 +01:00 [INF] Request finished HTTP/1.1 POST https://localhost:57680/Identity/Account/Manage/DownloadPersonalData application/x-www-form-urlencoded 225 - 200 277 application/json 43.6379ms
+2022-12-11 11:26:49.544 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:57680/Identity/Account/Manage - -
+2022-12-11 11:26:49.548 +01:00 [INF] Executing endpoint '/Account/Manage/Index'
+2022-12-11 11:26:49.549 +01:00 [INF] Route matched with {page = "/Account/Manage/Index", area = "Identity", action = "", controller = ""}. Executing page /Account/Manage/Index
+2022-12-11 11:26:49.550 +01:00 [INF] Executing handler method Microsoft.AspNetCore.Identity.UI.V4.Pages.Account.Manage.Internal.IndexModel.OnGetAsync - ModelState is "Valid"
+2022-12-11 11:26:49.552 +01:00 [INF] Entity Framework Core 6.0.8 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.8' with options: None
+2022-12-11 11:26:49.556 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."Id" = @__p_0
+LIMIT 1
+2022-12-11 11:26:49.556 +01:00 [INF] Executed handler method OnGetAsync, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2022-12-11 11:26:49.563 +01:00 [INF] Executed page /Account/Manage/Index in 14.0127ms
+2022-12-11 11:26:49.564 +01:00 [INF] Executed endpoint '/Account/Manage/Index'
+2022-12-11 11:26:49.564 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:57680/Identity/Account/Manage - - - 200 - text/html;+charset=utf-8 19.3787ms
+2022-12-11 11:26:50.965 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:57680/Identity/Account/Manage/Email - -
+2022-12-11 11:26:50.966 +01:00 [INF] Executing endpoint '/Account/Manage/Email'
+2022-12-11 11:26:50.967 +01:00 [INF] Route matched with {page = "/Account/Manage/Email", area = "Identity", action = "", controller = ""}. Executing page /Account/Manage/Email
+2022-12-11 11:26:50.967 +01:00 [INF] Executing handler method Microsoft.AspNetCore.Identity.UI.V4.Pages.Account.Manage.Internal.EmailModel.OnGetAsync - ModelState is "Valid"
+2022-12-11 11:26:50.968 +01:00 [INF] Entity Framework Core 6.0.8 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.8' with options: None
+2022-12-11 11:26:50.969 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."Id" = @__p_0
+LIMIT 1
+2022-12-11 11:26:50.970 +01:00 [INF] Executed handler method OnGetAsync, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2022-12-11 11:26:50.974 +01:00 [INF] Executed page /Account/Manage/Email in 7.2187ms
+2022-12-11 11:26:50.974 +01:00 [INF] Executed endpoint '/Account/Manage/Email'
+2022-12-11 11:26:50.976 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:57680/Identity/Account/Manage/Email - - - 200 - text/html;+charset=utf-8 10.6341ms
+2022-12-11 11:30:25.409 +01:00 [INF] Request starting HTTP/1.1 POST https://localhost:57680/Identity/Account/Logout?returnUrl=%2F%3Fpage%3D%252F application/x-www-form-urlencoded 225
+2022-12-11 11:30:25.416 +01:00 [INF] Executing endpoint '/Account/Logout'
+2022-12-11 11:30:25.429 +01:00 [INF] Route matched with {page = "/Account/Logout", area = "Identity", action = "", controller = ""}. Executing page /Account/Logout
+2022-12-11 11:30:25.435 +01:00 [INF] Executing handler method Microsoft.AspNetCore.Identity.UI.V5.Pages.Account.Internal.LogoutModel.OnPost - ModelState is "Valid"
+2022-12-11 11:30:25.445 +01:00 [INF] AuthenticationScheme: Identity.Application signed out.
+2022-12-11 11:30:25.446 +01:00 [INF] AuthenticationScheme: Identity.External signed out.
+2022-12-11 11:30:25.446 +01:00 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2022-12-11 11:30:25.446 +01:00 [INF] User logged out.
+2022-12-11 11:30:25.447 +01:00 [INF] Executed handler method OnPost, returned result Microsoft.AspNetCore.Mvc.LocalRedirectResult.
+2022-12-11 11:30:25.447 +01:00 [INF] Executing LocalRedirectResult, redirecting to /?page=%2F.
+2022-12-11 11:30:25.447 +01:00 [INF] Executed page /Account/Logout in 18.3747ms
+2022-12-11 11:30:25.447 +01:00 [INF] Executed endpoint '/Account/Logout'
+2022-12-11 11:30:25.448 +01:00 [INF] Request finished HTTP/1.1 POST https://localhost:57680/Identity/Account/Logout?returnUrl=%2F%3Fpage%3D%252F application/x-www-form-urlencoded 225 - 302 0 - 39.0275ms
+2022-12-11 11:30:25.452 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:57680/?page=%2F - -
+2022-12-11 11:30:25.453 +01:00 [INF] Executing endpoint 'cleanarch4.Web.Controllers.HomeController.Index (cleanarch4.Web)'
+2022-12-11 11:30:25.453 +01:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller cleanarch4.Web.Controllers.HomeController (cleanarch4.Web).
+2022-12-11 11:30:25.454 +01:00 [INF] Executing ViewResult, running view Index.
+2022-12-11 11:30:25.456 +01:00 [INF] Executed ViewResult - view Index executed in 2.5581ms.
+2022-12-11 11:30:25.456 +01:00 [INF] Executed action cleanarch4.Web.Controllers.HomeController.Index (cleanarch4.Web) in 2.9657ms
+2022-12-11 11:30:25.456 +01:00 [INF] Executed endpoint 'cleanarch4.Web.Controllers.HomeController.Index (cleanarch4.Web)'
+2022-12-11 11:30:25.457 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:57680/?page=%2F - - - 200 - text/html;+charset=utf-8 4.3018ms
+2022-12-11 11:30:26.804 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:57680/Identity/Account/Register - -
+2022-12-11 11:30:26.805 +01:00 [INF] Executing endpoint '/Account/Register'
+2022-12-11 11:30:26.815 +01:00 [INF] Route matched with {page = "/Account/Register", area = "Identity", action = "", controller = ""}. Executing page /Account/Register
+2022-12-11 11:30:26.819 +01:00 [INF] Executing handler method Microsoft.AspNetCore.Identity.UI.V5.Pages.Account.Internal.RegisterModel.OnGetAsync - ModelState is "Valid"
+2022-12-11 11:30:26.825 +01:00 [INF] Executed handler method OnGetAsync, returned result .
+2022-12-11 11:30:26.825 +01:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2022-12-11 11:30:26.826 +01:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2022-12-11 11:30:26.866 +01:00 [INF] Executed page /Account/Register in 50.7515ms
+2022-12-11 11:30:26.866 +01:00 [INF] Executed endpoint '/Account/Register'
+2022-12-11 11:30:26.866 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:57680/Identity/Account/Register - - - 200 - text/html;+charset=utf-8 61.9035ms
+2022-12-11 11:30:28.865 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:57680/Identity/Account/Login - -
+2022-12-11 11:30:28.865 +01:00 [INF] Executing endpoint '/Account/Login'
+2022-12-11 11:30:28.865 +01:00 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+2022-12-11 11:30:28.866 +01:00 [INF] Executing handler method Microsoft.AspNetCore.Identity.UI.V5.Pages.Account.Internal.LoginModel.OnGetAsync - ModelState is "Valid"
+2022-12-11 11:30:28.866 +01:00 [INF] AuthenticationScheme: Identity.External signed out.
+2022-12-11 11:30:28.867 +01:00 [INF] Executed handler method OnGetAsync, returned result .
+2022-12-11 11:30:28.867 +01:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2022-12-11 11:30:28.867 +01:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2022-12-11 11:30:28.870 +01:00 [INF] Executed page /Account/Login in 4.885ms
+2022-12-11 11:30:28.870 +01:00 [INF] Executed endpoint '/Account/Login'
+2022-12-11 11:30:28.871 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:57680/Identity/Account/Login - - - 200 - text/html;+charset=utf-8 6.0847ms
+2022-12-11 11:30:30.116 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:57680/Identity/Account/Register - -
+2022-12-11 11:30:30.116 +01:00 [INF] Executing endpoint '/Account/Register'
+2022-12-11 11:30:30.116 +01:00 [INF] Route matched with {page = "/Account/Register", area = "Identity", action = "", controller = ""}. Executing page /Account/Register
+2022-12-11 11:30:30.117 +01:00 [INF] Executing handler method Microsoft.AspNetCore.Identity.UI.V5.Pages.Account.Internal.RegisterModel.OnGetAsync - ModelState is "Valid"
+2022-12-11 11:30:30.117 +01:00 [INF] Executed handler method OnGetAsync, returned result .
+2022-12-11 11:30:30.117 +01:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2022-12-11 11:30:30.117 +01:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2022-12-11 11:30:30.120 +01:00 [INF] Executed page /Account/Register in 3.9497ms
+2022-12-11 11:30:30.121 +01:00 [INF] Executed endpoint '/Account/Register'
+2022-12-11 11:30:30.121 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:57680/Identity/Account/Register - - - 200 - text/html;+charset=utf-8 5.0819ms
+2022-12-11 11:30:31.700 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:57680/Identity/Account/Login - -
+2022-12-11 11:30:31.701 +01:00 [INF] Executing endpoint '/Account/Login'
+2022-12-11 11:30:31.701 +01:00 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+2022-12-11 11:30:31.702 +01:00 [INF] Executing handler method Microsoft.AspNetCore.Identity.UI.V5.Pages.Account.Internal.LoginModel.OnGetAsync - ModelState is "Valid"
+2022-12-11 11:30:31.703 +01:00 [INF] AuthenticationScheme: Identity.External signed out.
+2022-12-11 11:30:31.703 +01:00 [INF] Executed handler method OnGetAsync, returned result .
+2022-12-11 11:30:31.703 +01:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2022-12-11 11:30:31.703 +01:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2022-12-11 11:30:31.706 +01:00 [INF] Executed page /Account/Login in 5.0898ms
+2022-12-11 11:30:31.707 +01:00 [INF] Executed endpoint '/Account/Login'
+2022-12-11 11:30:31.707 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:57680/Identity/Account/Login - - - 200 - text/html;+charset=utf-8 6.6629ms
+2022-12-11 11:30:32.751 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:57680/Identity/Account/Register - -
+2022-12-11 11:30:32.751 +01:00 [INF] Executing endpoint '/Account/Register'
+2022-12-11 11:30:32.751 +01:00 [INF] Route matched with {page = "/Account/Register", area = "Identity", action = "", controller = ""}. Executing page /Account/Register
+2022-12-11 11:30:32.752 +01:00 [INF] Executing handler method Microsoft.AspNetCore.Identity.UI.V5.Pages.Account.Internal.RegisterModel.OnGetAsync - ModelState is "Valid"
+2022-12-11 11:30:32.752 +01:00 [INF] Executed handler method OnGetAsync, returned result .
+2022-12-11 11:30:32.752 +01:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2022-12-11 11:30:32.752 +01:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2022-12-11 11:30:32.756 +01:00 [INF] Executed page /Account/Register in 4.5452ms
+2022-12-11 11:30:32.756 +01:00 [INF] Executed endpoint '/Account/Register'
+2022-12-11 11:30:32.756 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:57680/Identity/Account/Register - - - 200 - text/html;+charset=utf-8 5.8468ms
+2022-12-11 11:32:25.020 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:57680/Identity/Account/Register - -
+2022-12-11 11:32:25.025 +01:00 [INF] Executing endpoint '/Account/Register'
+2022-12-11 11:32:25.026 +01:00 [INF] Route matched with {page = "/Account/Register", area = "Identity", action = "", controller = ""}. Executing page /Account/Register
+2022-12-11 11:32:25.033 +01:00 [INF] Executing handler method Microsoft.AspNetCore.Identity.UI.V5.Pages.Account.Internal.RegisterModel.OnGetAsync - ModelState is "Valid"
+2022-12-11 11:32:25.034 +01:00 [INF] Executed handler method OnGetAsync, returned result .
+2022-12-11 11:32:25.035 +01:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2022-12-11 11:32:25.035 +01:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2022-12-11 11:32:25.042 +01:00 [INF] Executed page /Account/Register in 13.4742ms
+2022-12-11 11:32:25.042 +01:00 [INF] Executed endpoint '/Account/Register'
+2022-12-11 11:32:25.042 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:57680/Identity/Account/Register - - - 200 - text/html;+charset=utf-8 22.8667ms
+2022-12-11 11:54:35.599 +01:00 [INF] Application is shutting down...
+2022-12-11 12:06:37.168 +01:00 [INF] User profile is available. Using '/Users/maciejw/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-12-11 12:06:37.866 +01:00 [INF] Entity Framework Core 6.0.8 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.8' with options: None
+2022-12-11 12:06:37.920 +01:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2022-12-11 12:06:37.927 +01:00 [INF] Entity Framework Core 6.0.8 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.8' with options: None
+2022-12-11 12:06:38.039 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "ToDoItems" AS "t")
+2022-12-11 12:06:38.162 +01:00 [INF] Now listening on: https://localhost:57680
+2022-12-11 12:06:38.162 +01:00 [INF] Now listening on: http://localhost:57679
+2022-12-11 12:06:38.164 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-11 12:06:38.164 +01:00 [INF] Hosting environment: Development
+2022-12-11 12:06:38.164 +01:00 [INF] Content root path: /Users/maciejw/Projects/cleanarch4/src/cleanarch4.Web/
+2022-12-11 12:06:38.605 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:57680/ - -
+2022-12-11 12:06:38.700 +01:00 [INF] Executing endpoint 'cleanarch4.Web.Controllers.HomeController.Index (cleanarch4.Web)'
+2022-12-11 12:06:38.704 +01:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller cleanarch4.Web.Controllers.HomeController (cleanarch4.Web).
+2022-12-11 12:06:38.709 +01:00 [INF] Executing ViewResult, running view Index.
+2022-12-11 12:06:38.853 +01:00 [INF] Executed ViewResult - view Index executed in 143.4774ms.
+2022-12-11 12:06:38.853 +01:00 [INF] Executed action cleanarch4.Web.Controllers.HomeController.Index (cleanarch4.Web) in 149.1506ms
+2022-12-11 12:06:38.853 +01:00 [INF] Executed endpoint 'cleanarch4.Web.Controllers.HomeController.Index (cleanarch4.Web)'
+2022-12-11 12:06:38.859 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:57680/ - - - 200 - text/html;+charset=utf-8 256.6920ms
+2022-12-11 12:06:41.829 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:57680/Identity/Account/Login - -
+2022-12-11 12:06:41.832 +01:00 [INF] Executing endpoint '/Account/Login'
+2022-12-11 12:06:41.866 +01:00 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+2022-12-11 12:06:41.888 +01:00 [INF] Executing handler method Microsoft.AspNetCore.Identity.UI.V5.Pages.Account.Internal.LoginModel.OnGetAsync - ModelState is "Valid"
+2022-12-11 12:06:41.896 +01:00 [INF] AuthenticationScheme: Identity.External signed out.
+2022-12-11 12:06:41.897 +01:00 [INF] Executed handler method OnGetAsync, returned result .
+2022-12-11 12:06:41.902 +01:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2022-12-11 12:06:41.919 +01:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2022-12-11 12:06:41.980 +01:00 [INF] Executed page /Account/Login in 113.5948ms
+2022-12-11 12:06:41.982 +01:00 [INF] Executed endpoint '/Account/Login'
+2022-12-11 12:06:41.984 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:57680/Identity/Account/Login - - - 200 - text/html;+charset=utf-8 155.7519ms
+2022-12-11 12:06:43.314 +01:00 [INF] Request starting HTTP/1.1 POST https://localhost:57680/Identity/Account/ExternalLogin?returnUrl=%2F application/x-www-form-urlencoded 198
+2022-12-11 12:06:43.323 +01:00 [INF] Executing endpoint '/Account/ExternalLogin'
+2022-12-11 12:06:43.338 +01:00 [INF] Route matched with {page = "/Account/ExternalLogin", area = "Identity", action = "", controller = ""}. Executing page /Account/ExternalLogin
+2022-12-11 12:06:43.356 +01:00 [INF] Executing handler method Microsoft.AspNetCore.Identity.UI.V5.Pages.Account.Internal.ExternalLoginModel.OnPost - ModelState is "Invalid"
+2022-12-11 12:06:43.357 +01:00 [INF] Executed handler method OnPost, returned result Microsoft.AspNetCore.Mvc.ChallengeResult.
+2022-12-11 12:06:43.359 +01:00 [INF] Executing ChallengeResult with authentication schemes (["Google"]).
+2022-12-11 12:06:43.365 +01:00 [INF] AuthenticationScheme: Google was challenged.
+2022-12-11 12:06:43.365 +01:00 [INF] Executed page /Account/ExternalLogin in 27.3043ms
+2022-12-11 12:06:43.365 +01:00 [INF] Executed endpoint '/Account/ExternalLogin'
+2022-12-11 12:06:43.365 +01:00 [INF] Request finished HTTP/1.1 POST https://localhost:57680/Identity/Account/ExternalLogin?returnUrl=%2F application/x-www-form-urlencoded 198 - 302 0 - 51.5810ms
+2022-12-11 12:06:43.751 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:57680/signin-google?state=CfDJ8LtiHXzdUSZFmTbogyxVvydQMjOjJ0rKYuwAS6qu7ctZm3WPJv5_NTGBGHgSU5xWKIgsJ1FPNdtF5K1nMrpm9_sCxcDZ0EnIfw4E-_RkadEuM6N7_RSKiey_PFMhwFjEK4lSruj7X9HX0MFUzGaKYqo9I3DdaCsWJRhfmIPKDsfDsIVV4cqQg27gAzVw2nCLlFmNPLBjtmhD54yfmAfZH8jG-0J6jPhd8lXDoyL5mxd_qlbUNrlb9MUBuwQwaLgi5NOFHAllCo2RnHVBUJDxUeje1mdcRNhLTX74XkmAsE4qKGQTRhfXiQIwmTD3Cx_uog&code=4%2F0AfgeXvsWC7CaEKYMl0IdRyEjK32LONboq5PZ9XJzVlDsWnxj8-0ZSLA-skgYJ3nODXmoSw&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&authuser=0&hd=djc.pl&prompt=none - -
+2022-12-11 12:06:44.405 +01:00 [INF] AuthenticationScheme: Identity.External signed in.
+2022-12-11 12:06:44.406 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:57680/signin-google?state=CfDJ8LtiHXzdUSZFmTbogyxVvydQMjOjJ0rKYuwAS6qu7ctZm3WPJv5_NTGBGHgSU5xWKIgsJ1FPNdtF5K1nMrpm9_sCxcDZ0EnIfw4E-_RkadEuM6N7_RSKiey_PFMhwFjEK4lSruj7X9HX0MFUzGaKYqo9I3DdaCsWJRhfmIPKDsfDsIVV4cqQg27gAzVw2nCLlFmNPLBjtmhD54yfmAfZH8jG-0J6jPhd8lXDoyL5mxd_qlbUNrlb9MUBuwQwaLgi5NOFHAllCo2RnHVBUJDxUeje1mdcRNhLTX74XkmAsE4qKGQTRhfXiQIwmTD3Cx_uog&code=4%2F0AfgeXvsWC7CaEKYMl0IdRyEjK32LONboq5PZ9XJzVlDsWnxj8-0ZSLA-skgYJ3nODXmoSw&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&authuser=0&hd=djc.pl&prompt=none - - - 302 0 - 655.5851ms
+2022-12-11 12:06:44.410 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:57680/Identity/Account/ExternalLogin?returnUrl=%2F&handler=Callback - -
+2022-12-11 12:06:44.410 +01:00 [INF] Executing endpoint '/Account/ExternalLogin'
+2022-12-11 12:06:44.411 +01:00 [INF] Route matched with {page = "/Account/ExternalLogin", area = "Identity", action = "", controller = ""}. Executing page /Account/ExternalLogin
+2022-12-11 12:06:44.411 +01:00 [INF] Executing handler method Microsoft.AspNetCore.Identity.UI.V5.Pages.Account.Internal.ExternalLoginModel.OnGetCallbackAsync - ModelState is "Valid"
+2022-12-11 12:06:44.444 +01:00 [INF] Entity Framework Core 6.0.8 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.8' with options: None
+2022-12-11 12:06:44.544 +01:00 [INF] Executed DbCommand (7ms) [Parameters=[@__loginProvider_0='?' (Size = 6), @__providerKey_1='?' (Size = 21)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."LoginProvider", "a"."ProviderKey", "a"."ProviderDisplayName", "a"."UserId"
+FROM "AspNetUserLogins" AS "a"
+WHERE ("a"."LoginProvider" = @__loginProvider_0) AND ("a"."ProviderKey" = @__providerKey_1)
+LIMIT 2
+2022-12-11 12:06:44.612 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."Id" = @__userId_0
+LIMIT 2
+2022-12-11 12:06:44.643 +01:00 [INF] AuthenticationScheme: Identity.External signed out.
+2022-12-11 12:06:44.658 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__user_Id_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ClaimType", "a"."ClaimValue", "a"."UserId"
+FROM "AspNetUserClaims" AS "a"
+WHERE "a"."UserId" = @__user_Id_0
+2022-12-11 12:06:44.659 +01:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2022-12-11 12:06:44.659 +01:00 [INF] User logged in with Google provider.
+2022-12-11 12:06:44.660 +01:00 [INF] Executed handler method OnGetCallbackAsync, returned result Microsoft.AspNetCore.Mvc.LocalRedirectResult.
+2022-12-11 12:06:44.660 +01:00 [INF] Executing LocalRedirectResult, redirecting to /.
+2022-12-11 12:06:44.660 +01:00 [INF] Executed page /Account/ExternalLogin in 249.329ms
+2022-12-11 12:06:44.660 +01:00 [INF] Executed endpoint '/Account/ExternalLogin'
+2022-12-11 12:06:44.661 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:57680/Identity/Account/ExternalLogin?returnUrl=%2F&handler=Callback - - - 302 0 - 250.9208ms
+2022-12-11 12:06:44.663 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:57680/ - -
+2022-12-11 12:06:44.665 +01:00 [INF] Executing endpoint 'cleanarch4.Web.Controllers.HomeController.Index (cleanarch4.Web)'
+2022-12-11 12:06:44.665 +01:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller cleanarch4.Web.Controllers.HomeController (cleanarch4.Web).
+2022-12-11 12:06:44.665 +01:00 [INF] Executing ViewResult, running view Index.
+2022-12-11 12:06:44.668 +01:00 [INF] Executed ViewResult - view Index executed in 2.4892ms.
+2022-12-11 12:06:44.668 +01:00 [INF] Executed action cleanarch4.Web.Controllers.HomeController.Index (cleanarch4.Web) in 2.6421ms
+2022-12-11 12:06:44.668 +01:00 [INF] Executed endpoint 'cleanarch4.Web.Controllers.HomeController.Index (cleanarch4.Web)'
+2022-12-11 12:06:44.668 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:57680/ - - - 200 - text/html;+charset=utf-8 4.7648ms
+2022-12-11 12:06:47.252 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:57680/Identity/Account/Manage - -
+2022-12-11 12:06:47.261 +01:00 [INF] Executing endpoint '/Account/Manage/Index'
+2022-12-11 12:06:47.267 +01:00 [INF] Route matched with {page = "/Account/Manage/Index", area = "Identity", action = "", controller = ""}. Executing page /Account/Manage/Index
+2022-12-11 12:06:47.284 +01:00 [INF] Executing handler method Microsoft.AspNetCore.Identity.UI.V4.Pages.Account.Manage.Internal.IndexModel.OnGetAsync - ModelState is "Valid"
+2022-12-11 12:06:47.287 +01:00 [INF] Entity Framework Core 6.0.8 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.8' with options: None
+2022-12-11 12:06:47.314 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."Id" = @__p_0
+LIMIT 1
+2022-12-11 12:06:47.319 +01:00 [INF] Executed handler method OnGetAsync, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2022-12-11 12:06:47.366 +01:00 [INF] Executed page /Account/Manage/Index in 98.8504ms
+2022-12-11 12:06:47.366 +01:00 [INF] Executed endpoint '/Account/Manage/Index'
+2022-12-11 12:06:47.366 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:57680/Identity/Account/Manage - - - 200 - text/html;+charset=utf-8 114.2276ms
+2022-12-11 12:16:22.419 +01:00 [INF] Application is shutting down...
+2022-12-11 12:16:47.291 +01:00 [INF] User profile is available. Using '/Users/maciejw/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-12-11 12:16:47.972 +01:00 [INF] Entity Framework Core 6.0.8 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.8' with options: None
+2022-12-11 12:16:48.021 +01:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2022-12-11 12:16:48.031 +01:00 [INF] Entity Framework Core 6.0.8 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.8' with options: None
+2022-12-11 12:16:48.142 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "ToDoItems" AS "t")
+2022-12-11 12:16:48.277 +01:00 [INF] Now listening on: https://localhost:57680
+2022-12-11 12:16:48.278 +01:00 [INF] Now listening on: http://localhost:57679
+2022-12-11 12:16:48.279 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-11 12:16:48.279 +01:00 [INF] Hosting environment: Development
+2022-12-11 12:16:48.279 +01:00 [INF] Content root path: /Users/maciejw/Projects/cleanarch4/src/cleanarch4.Web/
+2022-12-11 12:16:48.818 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:57680/ - -
+2022-12-11 12:16:48.902 +01:00 [INF] Executing endpoint 'cleanarch4.Web.Controllers.HomeController.Index (cleanarch4.Web)'
+2022-12-11 12:16:48.906 +01:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller cleanarch4.Web.Controllers.HomeController (cleanarch4.Web).
+2022-12-11 12:16:48.911 +01:00 [INF] Executing ViewResult, running view Index.
+2022-12-11 12:16:49.094 +01:00 [INF] Executed ViewResult - view Index executed in 182.5262ms.
+2022-12-11 12:16:49.094 +01:00 [INF] Executed action cleanarch4.Web.Controllers.HomeController.Index (cleanarch4.Web) in 188.184ms
+2022-12-11 12:16:49.094 +01:00 [INF] Executed endpoint 'cleanarch4.Web.Controllers.HomeController.Index (cleanarch4.Web)'
+2022-12-11 12:16:49.099 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:57680/ - - - 200 - text/html;+charset=utf-8 283.9201ms
+2022-12-11 12:17:22.737 +01:00 [INF] Application is shutting down...
