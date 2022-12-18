@@ -101,9 +101,9 @@ namespace cleanarch4.Web.Areas.Identity.Pages.Account
             [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
             public string ConfirmPassword { get; set; }
             
-            // [Display(Name= "Full name")]
-            // [StringValidator(MinLength = 5)]
-            // public string FullName { get; set; }
+            [Display(Name= "Full name")]
+            [StringValidator(MinLength = 5)]
+            public string FullName { get; set; }
         }
 
 
@@ -123,9 +123,9 @@ namespace cleanarch4.Web.Areas.Identity.Pages.Account
 
                 await _userStore.SetUserNameAsync(user, Input.Email, CancellationToken.None);
                 await _emailStore.SetEmailAsync(user, Input.Email, CancellationToken.None);
-                //await _userManager.AddClaimAsync(user, new Claim("fullname", Input.FullName));
                 var result = await _userManager.CreateAsync(user, Input.Password);
-
+                await _userManager.AddClaimAsync(user, new Claim("fullname", Input.FullName));
+                
                 if (result.Succeeded)
                 {
                     _logger.LogInformation("User created a new account with password.");
