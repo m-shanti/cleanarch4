@@ -24,7 +24,6 @@
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.Google" />
-    <PackageReference Include="Microsoft.Extensions.DependencyModel" />
     <PackageReference Include="Microsoft.Extensions.Logging.AzureAppServices" />
     <PackageReference Include="Serilog.AspNetCore" />
   </ItemGroup>
