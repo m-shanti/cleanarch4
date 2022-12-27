@@ -26,7 +26,6 @@
     <PackageReference Include="Microsoft.AspNetCore.Authentication.Google" />
     <PackageReference Include="Microsoft.Extensions.DependencyModel" />
     <PackageReference Include="Microsoft.Extensions.Logging.AzureAppServices" />
-    <PackageReference Include="Serilog.AspNetCore" />
   </ItemGroup>
   
   <ItemGroup>
