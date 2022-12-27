@@ -38,6 +38,5 @@
     <PackageVersion Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.8" />
     <PackageVersion Include="Microsoft.AspNetCore.Identity.UI" Version="6.0.8" />
     <PackageVersion Include="Microsoft.AspNetCore.Authentication.Google" Version="6.0.8" />
-    <PackageVersion Include="Microsoft.Extensions.Logging.AzureAppServices" Version="6.0.0" />
   </ItemGroup>
 </Project>
