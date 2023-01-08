@@ -10,7 +10,7 @@ using Microsoft.OpenApi.Models;
 using Serilog;
 using Microsoft.AspNetCore.Identity;
 
-var builder = WebApplication.CreateBuilder(args);
+var builder = WebApplication.CreateBuilder();
 
 builder.Services.AddHealthChecks();
 
@@ -24,9 +24,19 @@ builder.Services.Configure<CookiePolicyOptions>(options =>
   options.MinimumSameSitePolicy = SameSiteMode.None;
 });
 
-string connectionString = builder.Configuration.GetConnectionString("SqliteConnection");  //Configuration.GetConnectionString("DefaultConnection");
+string connectionString = builder.Configuration.GetConnectionString("SqlConnection");  //Configuration.GetConnectionString("DefaultConnection");
 
-builder.Services.AddDbContext(connectionString); // look inside
+builder.WebHost.ConfigureAppConfiguration((context, configurationBuilder) =>
+{
+  if (context.HostingEnvironment.IsProduction())
+  {
+    builder.Services.AddDbContextSqlServer(connectionString);
+  }
+  else
+  {
+    builder.Services.AddDbContextSqlLite(connectionString);
+  }
+});
 
 builder.Services.AddDefaultIdentity<ApplicationUser>(options =>
   {
