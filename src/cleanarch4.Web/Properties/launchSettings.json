@@ -23,7 +23,7 @@
       },
       "applicationUrl": "https://localhost:57680;http://localhost:57679/"
     },
-    "release": {
+    "Release": {
       "commandName": "Project",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Production"
