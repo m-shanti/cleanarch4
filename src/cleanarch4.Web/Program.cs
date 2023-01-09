@@ -28,15 +28,14 @@ string connectionString = builder.Configuration.GetConnectionString("SqlConnecti
 
 builder.WebHost.ConfigureAppConfiguration((context, configurationBuilder) =>
 {
-  builder.Services.AddDbContextSqlServer(connectionString);
-  // if (context.HostingEnvironment.IsProduction())
-  // {
-  //   builder.Services.AddDbContextSqlServer(connectionString);
-  // }
-  // else
-  // {
-  //   builder.Services.AddDbContextSqlLite(connectionString);
-  // }
+  if (context.HostingEnvironment.IsProduction())
+  {
+    builder.Services.AddDbContextSqlServer(connectionString);
+  }
+  else
+  {
+    builder.Services.AddDbContextSqlLite(connectionString);
+  }
 });
 
 builder.Services.AddDefaultIdentity<ApplicationUser>(options =>
