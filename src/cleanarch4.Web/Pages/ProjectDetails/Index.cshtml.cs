@@ -10,17 +10,22 @@ namespace cleanarch4.Web.Pages.ProjectDetails;
 public class IndexModel : PageModel
 {
   private readonly IRepository<Project> _repository;
+  private readonly IHostEnvironment _hostEnvironment;
 
   [BindProperty(SupportsGet = true)]
   public int ProjectId { get; set; }
 
   public string Message { get; set; } = "";
 
+  public string Environment { get; }
+
   public ProjectDTO? Project { get; set; }
 
-  public IndexModel(IRepository<Project> repository)
+  public IndexModel(IRepository<Project> repository, IHostEnvironment hostEnvironment)
   {
     _repository = repository;
+    _hostEnvironment = hostEnvironment;
+    this.Environment = _hostEnvironment.EnvironmentName;
   }
 
   public async Task OnGetAsync()
