@@ -20,6 +20,7 @@ public class AppDbContext : IdentityDbContext<ApplicationUser>
 
   public DbSet<ToDoItem> ToDoItems => Set<ToDoItem>();
   public DbSet<Project> Projects => Set<Project>();
+  public DbSet<KnowledgePill> KnowledgePills => Set<KnowledgePill>();
 
   protected override void OnModelCreating(ModelBuilder modelBuilder)
   {
