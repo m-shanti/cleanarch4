@@ -1,34 +1,35 @@
-@page
-@model cleanarch4.Web.Pages.KnowPills.NewPill
+@page "{id}"
+@model cleanarch4.Web.Pages.KnowPills.EditPill
 
 @{
     Layout = "_Layout";
 }
 
-<h1>New knowledge pill</h1>
+<h1>Edit knowledge pill: @Model.Input.KnowledgePill.Title</h1>
 
 @if (string.IsNullOrEmpty(Model.Input.Message))
 {
-
     <div class="row">
         <div class="col-md-4">
-            <form asp-page="NewPill">
+            <form asp-page="EditPill">
                 <div class="form-floating">
-                    <input asp-for="Input.KnowledgePill.Title" class="form-control"/>
+                    <input asp-for="Input.KnowledgePill.Title" class="form-control" value="@Model.Input.KnowledgePill.Title"/>
                     <label asp-for="Input.KnowledgePill.Title"></label>
                 </div>
                 <div class="form-floating">
-                    <textarea asp-for="Input.KnowledgePill.Description" class="form-control"></textarea>
+                    <textarea asp-for="Input.KnowledgePill.Description" class="form-control" value="@Model.Input.KnowledgePill.Description"></textarea>
                     <label asp-for="Input.KnowledgePill.Description"></label>
                 </div>
                 <div class="form-floating">
-                    <input asp-for="Input.KnowledgePill.Link" class="form-control"/>
+                    <input asp-for="Input.KnowledgePill.Link" class="form-control" value="@Model.Input.KnowledgePill.Link"/>
                     <label asp-for="Input.KnowledgePill.Link"></label>
                 </div>
-                <button type="submit" class="btn-primary">Create</button>
+                <input type="hidden" asp-for="Input.KnowledgePill.Id"/>
+                <button type="submit" class="btn-primary">Update</button>
             </form>
         </div>
     </div>
+
 }
 else
 {

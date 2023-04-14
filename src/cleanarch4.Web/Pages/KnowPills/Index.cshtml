@@ -1,19 +1,27 @@
 @page
-@model cleanarch4.Web.Pages.KnowPills.IndexModel
+@using cleanarch4.Web.DTO
+@model cleanarch4.Web.Pages.KnowPills.Index
 
 @{
-    Layout = null;
+    Layout = "_Layout";
 }
 
-<!DOCTYPE html>
+<h1>Knowledge pills</h1>
+<h2>Items @Model.Input.KnowledgePillsCount</h2>
 
-<html>
-<head>
-    <title>Knowledge pills list</title>
-</head>
-<body>
-<div>
-    
+<div class="row">
+    <div class="col-md-6">
+        <ul class="list-group">
+            @foreach (KnowledgePillPoco pill in @Model.Input.Pills)
+            {
+                <li class="list-group-item">
+                    <a href="@pill.Link"><span>@pill.Title</span></a>
+                    <span>@pill.Description</span>
+                    <a class="btn btn-info" asp-page="EditPill" asp-route-id="@pill.Id">Edit</a>
+                </li>
+            }
+        </ul>
+    </div>
 </div>
-</body>
-</html>
+
+<a class="nav-link text-dark" asp-area="" asp-page="NewPill">New pill</a>

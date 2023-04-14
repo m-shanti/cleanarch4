@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace cleanarch4.Infrastructure.Migrations
 {
-    public partial class AddIdentitySchema : Migration
+    public partial class InitialMigration : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -24,29 +24,58 @@ namespace cleanarch4.Infrastructure.Migrations
                 });
 
             migrationBuilder.CreateTable(
-              name: "AspNetUsers",
-              columns: table => new
-              {
-                Id = table.Column<string>(type: "TEXT", nullable: false),
-                UserName = table.Column<string>(type: "TEXT", maxLength: 256, nullable: true),
-                NormalizedUserName = table.Column<string>(type: "TEXT", maxLength: 256, nullable: true),
-                Email = table.Column<string>(type: "TEXT", maxLength: 256, nullable: true),
-                NormalizedEmail = table.Column<string>(type: "TEXT", maxLength: 256, nullable: true),
-                EmailConfirmed = table.Column<bool>(type: "INTEGER", nullable: false),
-                PasswordHash = table.Column<string>(type: "TEXT", nullable: true),
-                SecurityStamp = table.Column<string>(type: "TEXT", nullable: true),
-                ConcurrencyStamp = table.Column<string>(type: "TEXT", nullable: true),
-                PhoneNumber = table.Column<string>(type: "TEXT", nullable: true),
-                PhoneNumberConfirmed = table.Column<bool>(type: "INTEGER", nullable: false),
-                TwoFactorEnabled = table.Column<bool>(type: "INTEGER", nullable: false),
-                LockoutEnd = table.Column<DateTimeOffset>(type: "TEXT", nullable: true),
-                LockoutEnabled = table.Column<bool>(type: "INTEGER", nullable: false),
-                AccessFailedCount = table.Column<int>(type: "INTEGER", nullable: false)
-              },
-              constraints: table =>
-              {
-                table.PrimaryKey("PK_AspNetUsers", x => x.Id);
-              });
+                name: "AspNetUsers",
+                columns: table => new
+                {
+                    Id = table.Column<string>(type: "TEXT", nullable: false),
+                    UserName = table.Column<string>(type: "TEXT", maxLength: 256, nullable: true),
+                    NormalizedUserName = table.Column<string>(type: "TEXT", maxLength: 256, nullable: true),
+                    Email = table.Column<string>(type: "TEXT", maxLength: 256, nullable: true),
+                    NormalizedEmail = table.Column<string>(type: "TEXT", maxLength: 256, nullable: true),
+                    EmailConfirmed = table.Column<bool>(type: "INTEGER", nullable: false),
+                    PasswordHash = table.Column<string>(type: "TEXT", nullable: true),
+                    SecurityStamp = table.Column<string>(type: "TEXT", nullable: true),
+                    ConcurrencyStamp = table.Column<string>(type: "TEXT", nullable: true),
+                    PhoneNumber = table.Column<string>(type: "TEXT", nullable: true),
+                    PhoneNumberConfirmed = table.Column<bool>(type: "INTEGER", nullable: false),
+                    TwoFactorEnabled = table.Column<bool>(type: "INTEGER", nullable: false),
+                    LockoutEnd = table.Column<DateTimeOffset>(type: "TEXT", nullable: true),
+                    LockoutEnabled = table.Column<bool>(type: "INTEGER", nullable: false),
+                    AccessFailedCount = table.Column<int>(type: "INTEGER", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_AspNetUsers", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "KnowledgePills",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    Title = table.Column<string>(type: "TEXT", nullable: false),
+                    Description = table.Column<string>(type: "TEXT", nullable: false),
+                    Link = table.Column<string>(type: "TEXT", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_KnowledgePills", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Projects",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    Name = table.Column<string>(type: "TEXT", maxLength: 100, nullable: false),
+                    Priority = table.Column<int>(type: "INTEGER", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Projects", x => x.Id);
+                });
 
             migrationBuilder.CreateTable(
                 name: "AspNetRoleClaims",
@@ -153,7 +182,28 @@ namespace cleanarch4.Infrastructure.Migrations
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
-            
+
+            migrationBuilder.CreateTable(
+                name: "ToDoItems",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    Title = table.Column<string>(type: "TEXT", nullable: false),
+                    Description = table.Column<string>(type: "TEXT", nullable: false),
+                    IsDone = table.Column<bool>(type: "INTEGER", nullable: false),
+                    ProjectId = table.Column<int>(type: "INTEGER", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_ToDoItems", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_ToDoItems_Projects_ProjectId",
+                        column: x => x.ProjectId,
+                        principalTable: "Projects",
+                        principalColumn: "Id");
+                });
+
             migrationBuilder.CreateIndex(
                 name: "IX_AspNetRoleClaims_RoleId",
                 table: "AspNetRoleClaims",
@@ -190,6 +240,11 @@ namespace cleanarch4.Infrastructure.Migrations
                 table: "AspNetUsers",
                 column: "NormalizedUserName",
                 unique: true);
+
+            migrationBuilder.CreateIndex(
+                name: "IX_ToDoItems_ProjectId",
+                table: "ToDoItems",
+                column: "ProjectId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
@@ -208,12 +263,21 @@ namespace cleanarch4.Infrastructure.Migrations
 
             migrationBuilder.DropTable(
                 name: "AspNetUserTokens");
-            
+
+            migrationBuilder.DropTable(
+                name: "KnowledgePills");
+
+            migrationBuilder.DropTable(
+                name: "ToDoItems");
+
             migrationBuilder.DropTable(
                 name: "AspNetRoles");
 
             migrationBuilder.DropTable(
                 name: "AspNetUsers");
+
+            migrationBuilder.DropTable(
+                name: "Projects");
         }
     }
 }

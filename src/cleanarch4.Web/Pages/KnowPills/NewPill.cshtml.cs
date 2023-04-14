@@ -1,11 +1,9 @@
-using System.ComponentModel.DataAnnotations;
-using cleanarch4.Core.ProjectAggregate;
+﻿using cleanarch4.Core.ProjectAggregate;
 using cleanarch4.Infrastructure.Data;
+using cleanarch4.Web.DTO;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
-using NuGet.Packaging.Licenses;
-using NuGet.Protocol.Plugins;
 
 namespace cleanarch4.Web.Pages.KnowPills;
 
@@ -38,15 +36,4 @@ public class NewPill : PageModel
     public KnowledgePillPoco KnowledgePill { get; set; }
     public string Message { get; set; }
   }
-}
-
-
-
-public class KnowledgePillPoco
-{
-  [Display(Name = "Title")]
-  public string Title { get; set; }
-  public string Description { get; set; }
-  [Url]
-  public string Link { get; set; }
 }
