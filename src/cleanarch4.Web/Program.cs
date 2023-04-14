@@ -14,27 +14,45 @@ var builder = WebApplication.CreateBuilder();
 
 string connectionString = builder.Configuration.GetConnectionString("SqlConnection");  //Configuration.GetConnectionString("DefaultConnection");
 
-builder.WebHost.ConfigureServices(((context, services) =>
-{
-  var configuration = context.Configuration;
-  var provider = configuration.GetValue("Environment", "Unset");
-  
-  Console.WriteLine($"Provider={provider}.");
-  
-  builder.Services.AddDbContext<AppDbContext>(
-    options => _ = provider switch
-    {
-      "Development" => options.UseSqlite(
-        connectionString,
-        x => x.MigrationsAssembly("cleanarch4.Infrastructure.Sqlite")),
+builder.WebHost.ConfigureServices((context, services) =>
+  {
+    var configuration = context.Configuration;
+    var provider = configuration.GetValue("Environment", "Unset");
 
-      "Production" => options.UseSqlServer(
-        connectionString,
-        x => x.MigrationsAssembly("cleanarch4.Infrastructure.Sql")),
+    bool isProduction = context.HostingEnvironment.IsProduction();
 
-      _ => throw new Exception($"Unsupported provider: {provider}")
-    });
-}));
+    Console.WriteLine($"Provider={provider}.");
+
+    builder.Services.AddDbContext<AppDbContext>(
+      options =>
+      {
+        if (isProduction)
+        {
+          options.UseSqlServer(
+            connectionString,
+            x => x.MigrationsAssembly("cleanarch4.Infrastructure.Sql"));
+        }
+        else
+        {
+          options.UseSqlite(
+            connectionString,
+            x => x.MigrationsAssembly("cleanarch4.Infrastructure.Sqlite"));
+        }
+      });
+    // options => _ = provider switch
+    // {
+    //   "Development" => options.UseSqlite(
+    //     connectionString,
+    //     x => x.MigrationsAssembly("cleanarch4.Infrastructure.Sqlite")),
+    //
+    //   "Production" => options.UseSqlServer(
+    //     connectionString,
+    //     x => x.MigrationsAssembly("cleanarch4.Infrastructure.Sql")),
+    //
+    //   _ => throw new Exception($"Unsupported provider: {provider}")
+    // });
+  }
+);
 
 
 builder.Services.AddHealthChecks();
