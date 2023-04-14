@@ -16,13 +16,7 @@ string connectionString = builder.Configuration.GetConnectionString("SqlConnecti
 
 builder.WebHost.ConfigureServices((context, services) =>
   {
-    var configuration = context.Configuration;
-    var provider = configuration.GetValue("Environment", "Unset");
-
     bool isProduction = context.HostingEnvironment.IsProduction();
-
-    Console.WriteLine($"Provider={provider}.");
-
     builder.Services.AddDbContext<AppDbContext>(
       options =>
       {
@@ -39,18 +33,6 @@ builder.WebHost.ConfigureServices((context, services) =>
             x => x.MigrationsAssembly("cleanarch4.Infrastructure.Sqlite"));
         }
       });
-    // options => _ = provider switch
-    // {
-    //   "Development" => options.UseSqlite(
-    //     connectionString,
-    //     x => x.MigrationsAssembly("cleanarch4.Infrastructure.Sqlite")),
-    //
-    //   "Production" => options.UseSqlServer(
-    //     connectionString,
-    //     x => x.MigrationsAssembly("cleanarch4.Infrastructure.Sql")),
-    //
-    //   _ => throw new Exception($"Unsupported provider: {provider}")
-    // });
   }
 );
 
