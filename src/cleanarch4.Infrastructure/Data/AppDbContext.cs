@@ -21,6 +21,7 @@ public class AppDbContext : IdentityDbContext<ApplicationUser>
   public DbSet<ToDoItem> ToDoItems => Set<ToDoItem>();
   public DbSet<Project> Projects => Set<Project>();
   public DbSet<KnowledgePill> KnowledgePills => Set<KnowledgePill>();
+  public DbSet<TempTable> TempT => Set<TempTable>();
 
   protected override void OnModelCreating(ModelBuilder modelBuilder)
   {
@@ -50,4 +51,10 @@ public class AppDbContext : IdentityDbContext<ApplicationUser>
   {
     return SaveChangesAsync().GetAwaiter().GetResult();
   }
+}
+
+public class TempTable
+{
+  public int Id { get; set; }
+  public string Title { get; set; }
 }
