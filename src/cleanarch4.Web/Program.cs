@@ -17,7 +17,7 @@ string connectionString = builder.Configuration.GetConnectionString("SqlConnecti
 builder.WebHost.ConfigureServices(((context, services) =>
 {
   var configuration = context.Configuration;
-  var provider = configuration.GetValue("environment", "Production");
+  var provider = configuration.GetValue("Environment", "Unset");
   
   Console.WriteLine($"Provider={provider}.");
   
