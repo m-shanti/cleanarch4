@@ -12,6 +12,31 @@ using Microsoft.AspNetCore.Identity;
 
 var builder = WebApplication.CreateBuilder();
 
+string connectionString = builder.Configuration.GetConnectionString("SqlConnection");  //Configuration.GetConnectionString("DefaultConnection");
+
+builder.WebHost.ConfigureServices(((context, services) =>
+{
+  var configuration = context.Configuration;
+  var provider = configuration.GetValue("environment", "Unknown");
+  
+  Console.WriteLine($"Provider={provider}.");
+  
+  builder.Services.AddDbContext<AppDbContext>(
+    options => _ = provider switch
+    {
+      "Development" => options.UseSqlite(
+        connectionString,
+        x => x.MigrationsAssembly("cleanarch4.Infrastructure.Sqlite")),
+
+      "Production" => options.UseSqlServer(
+        connectionString,
+        x => x.MigrationsAssembly("cleanarch4.Infrastructure.Sql")),
+
+      _ => throw new Exception($"Unsupported provider: {provider}")
+    });
+}));
+
+
 builder.Services.AddHealthChecks();
 
 builder.Host.UseServiceProviderFactory(new AutofacServiceProviderFactory());
@@ -24,19 +49,41 @@ builder.Services.Configure<CookiePolicyOptions>(options =>
   options.MinimumSameSitePolicy = SameSiteMode.None;
 });
 
-string connectionString = builder.Configuration.GetConnectionString("SqlConnection");  //Configuration.GetConnectionString("DefaultConnection");
-
-builder.WebHost.ConfigureAppConfiguration((context, configurationBuilder) =>
-{
-  if (context.HostingEnvironment.IsProduction())
-  {
-    builder.Services.AddDbContextSqlServer(connectionString);
-  }
-  else
-  {
-    builder.Services.AddDbContextSqlLite(connectionString);
-  }
-});
+// string connectionString = builder.Configuration.GetConnectionString("SqlConnection");  //Configuration.GetConnectionString("DefaultConnection");
+//
+// bool isProduction = false;
+//
+// builder.WebHost.ConfigureAppConfiguration((context, configurationBuilder) =>
+// {
+//   // isProduction = context.HostingEnvironment.IsProduction();
+//   // if (isProduction)
+//   // {
+//   //   builder.Services.AddDbContextSqlServer(connectionString);
+//   // }
+//   // else
+//   // {
+//   //   builder.Services.AddDbContextSqlLite(connectionString);
+//   // }
+//   
+//   var configuration = context.Configuration;
+//   var provider = configuration.GetValue("environment", "Unknown"); // sql, sqllite
+//
+//   Console.WriteLine($"Provider={provider}.");
+//   
+//   builder.Services.AddDbContext<AppDbContext>(
+//     options => _ = provider switch
+//     {
+//       "Development" => options.UseSqlite(
+//         connectionString,
+//         x => x.MigrationsAssembly("cleanarch4.Infrastructure.Sqlite")),
+//
+//       "Production" => options.UseSqlServer(
+//         connectionString,
+//         x => x.MigrationsAssembly("cleanarch4.Infrastructure.Sql")),
+//
+//       _ => throw new Exception($"Unsupported provider: {provider}")
+//     });
+// });
 
 builder.Services.AddDefaultIdentity<ApplicationUser>(options =>
   {
@@ -119,10 +166,10 @@ using (var scope = app.Services.CreateScope())
 
   try
   {
-    var context = services.GetRequiredService<AppDbContext>();
-    context.Database.Migrate();
-    //context.Database.EnsureCreated();
-    SeedData.Initialize(services);
+      AppDbContext context = services.GetRequiredService<AppDbContext>();
+      context.Database.Migrate();
+      //context.Database.EnsureCreated();
+      SeedData.Initialize(services);
   }
   catch (Exception ex)
   {
