@@ -22,6 +22,7 @@ public class AppDbContext : IdentityDbContext<ApplicationUser>
   public DbSet<Project> Projects => Set<Project>();
   public DbSet<KnowledgePill> KnowledgePills => Set<KnowledgePill>();
   public DbSet<TempTable> TempT => Set<TempTable>();
+  public DbSet<TempTable2> TempT2 => Set<TempTable2>();
 
   protected override void OnModelCreating(ModelBuilder modelBuilder)
   {
@@ -54,6 +55,11 @@ public class AppDbContext : IdentityDbContext<ApplicationUser>
 }
 
 public class TempTable
+{
+  public int Id { get; set; }
+  public string Title { get; set; }
+}
+public class TempTable2
 {
   public int Id { get; set; }
   public string Title { get; set; }
